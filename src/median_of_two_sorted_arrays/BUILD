@@ -1,21 +1,19 @@
 cc_library(
-    name = "way2expert",
+    name = "median_of_two_sorted_arrays",
     hdrs = glob([
-        "src/*.h",
+        "median_of_two_sorted_arrays.h",
     ]),
     visibility = ["//visibility:public"],
 )
 
 cc_test(
     name = "median_of_two_sorted_arrays_test",
-    srcs = ["median_of_two_sorted_arrays_test.cc"],
-    # copts = ABSL_TEST_COPTS,
+    srcs = [
+        "median_of_two_sorted_arrays_test.cc",
+    ],
     visibility = ["//visibility:public"],
-    includes = glob([
-        "src/*.h",
-    ]),
     deps = [
-        ":way2expert",
+        ":median_of_two_sorted_arrays",
         "@com_google_googletest//:gtest_main",
     ],
 )

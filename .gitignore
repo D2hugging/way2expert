@@ -33,3 +33,4 @@
 
 # About project
 bazel-*
+.vscode/

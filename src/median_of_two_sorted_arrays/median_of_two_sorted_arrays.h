@@ -1,12 +1,12 @@
-#ifndef median_of_two_sorted_arrays_H
-#define median_of_two_sorted_arrays_H
+#ifndef MEDIAN_OF_TWO_SORTED_ARRAYS_H_
+#define MEDIAN_OF_TWO_SORTED_ARRAYS_H_
 
 #include <vector>
 
 namespace foo {
 
-double findMedianSortedArrays(std::vector<int>& nums1,
-                              std::vector<int>& nums2) {
+double findMedianSortedArrays(const std::vector<int>& nums1,
+                              const std::vector<int>& nums2) {
   int m = nums1.size();
   int n = nums2.size();
   int x = 0;

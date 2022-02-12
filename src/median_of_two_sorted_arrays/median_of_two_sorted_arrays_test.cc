@@ -1,4 +1,4 @@
-#include "src/median_of_two_sorted_arrays.h"
+#include "src/median_of_two_sorted_arrays/median_of_two_sorted_arrays.h"
 
 #include "gtest/gtest.h"
 
@@ -36,8 +36,8 @@ class MedianofTwoSortedArraysTest : public ::testing::Test {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(MedianofTwoSortedArraysTest, OneOfEmpty) {
-  const std::vecotr<int> arr1{};
-  const std::vecotr<int> arr2{1, 2, 3};
+  const std::vector<int> arr1{};
+  const std::vector<int> arr2{1, 2, 3};
   
   EXPECT_EQ(foo::findMedianSortedArrays(arr1, arr2), 2.0);
 }
@@ -45,27 +45,18 @@ TEST_F(MedianofTwoSortedArraysTest, OneOfEmpty) {
 // Tests that Foo does Xyz.
 TEST_F(MedianofTwoSortedArraysTest, Even) {
   // Exercises the Xyz feature of Foo.
-  const std::vecotr<int> arr1{1, 2};
-  const std::vecotr<int> arr2{3, 4};
+  const std::vector<int> arr1{1, 2};
+  const std::vector<int> arr2{3, 4};
   
   EXPECT_EQ(foo::findMedianSortedArrays(arr1, arr2), 2.5);
 }
 
 TEST_F(MedianofTwoSortedArraysTest, Odd) {
   // Exercises the Xyz feature of Foo.
-  const std::vecotr<int> arr1{1, 2, 3};
-  const std::vecotr<int> arr2{4, 5};
+  const std::vector<int> arr1{1, 2, 3};
+  const std::vector<int> arr2{4, 5};
   
   EXPECT_EQ(foo::findMedianSortedArrays(arr1, arr2), 3.0);
 }
-
-// }  // namespace foo
-// }  // namespace project
-// }  // namespace my
-
-// int main(int argc, char **argv) {
-//   ::testing::InitGoogleTest(&argc, argv);
-//   return RUN_ALL_TESTS();
-// }
 
 }  // namespace foo
