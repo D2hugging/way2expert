@@ -23,6 +23,7 @@
 - [Remove One Element to Make the Array Strictly Increasing](src/remove_make_strictly_inc/remove_make_strictly_inc.h)
 - [reshape matrix](src/reshape_matrix/reshape_matrix.h)
 - [reverse integer](src/reverse_integer/reverse_integer.h)
+- [rotate array](src/rotate_array/rotate_array.h)
 - [rotate list](src/rotate_list/rotate_list.h)
 - [search insert position](src/search_insert_position/search_insert_position.h)
 - [search rotated sorted array](src/search_rotated_sorted/search_rotated_sorted.h)

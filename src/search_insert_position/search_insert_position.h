@@ -28,6 +28,7 @@ int SearchInsert(std::vector<int>& nums, int target) {
       right = mid - 1;
     }
   }
+  // not exist
   if (target > nums[left]) {
     return left + 1;
   }
