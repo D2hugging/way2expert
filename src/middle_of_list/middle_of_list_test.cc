@@ -1,19 +1,19 @@
-#include "src/rotate_list/rotate_list.h"
+#include "src/middle_of_list/middle_of_list.h"
 
 #include "gtest/gtest.h"
 
 namespace foo {
 
-class RotateRightTest : public ::testing::Test {
+class MiddleNodeTest : public ::testing::Test {
  protected:
   // You can remove any or all of the following functions if their bodies would
   // be empty.
 
-  RotateRightTest() {
+  MiddleNodeTest() {
      // You can do set-up work for each test here.
   }
 
-  ~RotateRightTest() override {
+  ~MiddleNodeTest() override {
      // You can do clean-up work that doesn't throw exceptions here.
   }
 
@@ -35,33 +35,40 @@ class RotateRightTest : public ::testing::Test {
 };
 
 // Tests that the Foo::Bar() method does Abc.
-TEST_F(RotateRightTest, case1) {
-// Input: head = [1,2,3,4,5], k = 2
-// Output: [4,5,1,2,3]
+TEST_F(MiddleNodeTest, case1) {
+// Input: head = [1,2,3,4,5]
+// Output: [3,4,5]
+// Explanation: The middle node of the list is node 3.
    auto head = new ListNode(1);
    head->next = new ListNode(2);
    head->next->next = new ListNode(3);
    head->next->next->next = new ListNode(4);
    head->next->next->next->next = new ListNode(5);
-   auto k = 2;
-   auto output = RotateRight(head, k);
-   ASSERT_EQ(output->val, 4);
-   ASSERT_EQ(output->next->val, 5);
-   ASSERT_EQ(output->next->next->val, 1);
+   auto output = MiddleNode(head);
+   ASSERT_EQ(output->val, 3);
+   ASSERT_EQ(output->next->val, 4);
+   ASSERT_EQ(output->next->next->val, 5);
+   ASSERT_EQ(output->next->next->next, nullptr);
 }
 
-// Tests that the Foo::Bar() method does Abc.
-TEST_F(RotateRightTest, case2) {
 // Input: head = [0,1,2], k = 4
 // Output: [2,0,1]
-   auto head = new ListNode(0);
-   head->next = new ListNode(1);
-   head->next->next = new ListNode(2);
-   auto k = 4;
-   auto output = RotateRight(head, k);
-   ASSERT_EQ(output->val, 2);
-   ASSERT_EQ(output->next->val, 0);
-   ASSERT_EQ(output->next->next->val, 1);
+TEST_F(MiddleNodeTest, case2) {
+// Input: head = [1,2,3,4,5,6]
+// Output: [4,5,6]
+// Explanation: Since the list has two middle nodes with values 3 and 4, we return the second one.
+   auto head = new ListNode(1);
+   head->next = new ListNode(2);
+   head->next->next = new ListNode(3);
+   head->next->next->next = new ListNode(4);
+   head->next->next->next->next = new ListNode(5);
+   head->next->next->next->next->next = new ListNode(6);
+
+   auto output = MiddleNode(head);
+   ASSERT_EQ(output->val, 4);
+   ASSERT_EQ(output->next->val, 5);
+   ASSERT_EQ(output->next->next->val, 6);
+   ASSERT_EQ(output->next->next->next, nullptr);
 }
 
 }  // namespace foo
