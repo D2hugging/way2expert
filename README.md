@@ -2,6 +2,7 @@
 
 ## problom list
 
+- [01_matrix](src/01_matrix/01_matrix.h)
 - [Add Two Numbers](src/add_two_numbers/add_two_numbers.h)
 - [all integers in range](src/all_int_in_range/all_int_in_range.h)
 - [append k integers with minimal sum](src/append_k_integers/append_k_integers.h)
@@ -27,6 +28,7 @@
 - [next greater element 2](src/next_greater_element2/next_greater_element2.h)
 - [pascal_triangle](src/pascal_triangle/pascal_triangle.h)
 - [permutation in string](src/permutation_in_string/permutation_in_string.h)
+- [implement a queue using stack](src/queue_using_stack/queue_using_stack.h)
 - [remove linked list elements](src/remove_linked_list_elements/remove_linked_list_elements.h)
 - [Remove One Element to Make the Array Strictly Increasing](src/remove_make_strictly_inc/remove_make_strictly_inc.h)
 - [remove the nth node from end](src/remove_nth_node_from_end/remove_nth_node_from_end.h)
@@ -35,6 +37,7 @@
 - [reverse words in a string 3](src/reverse_words_in_string3/reverse_words_in_string3.h)
 - [rotate array](src/rotate_array/rotate_array.h)
 - [rotate list](src/rotate_list/rotate_list.h)
+- [rotting oranges](src/rotting_oranges/rotting_oranges.h)
 - [search 2d matrix 1](src/search_2d_matrix1/search_2d_matrix1.h)
 - [search insert position](src/search_insert_position/search_insert_position.h)
 - [search rotated sorted array](src/search_rotated_sorted/search_rotated_sorted.h)
