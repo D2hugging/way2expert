@@ -9,6 +9,7 @@
 - [assign cookies](src/assign_cookies/assign_cookies.h)
 - [best time to buy and sell stocks](src/best_time_buy_stock1/best_time_buy_stock1.h)
 - [container with most water](src/container_with_most_water/max_area.h)
+- [count collisions on a road](src/count_collisions_on_road/count_collisions_on_road.h)
 - [generate parenthesis](src/generate_parenthesis/generate_parenthesis.h)
 - [inorder_traversl](src/inorder_traversal/inorder_traversal.h)
 - [Find All K-Distant Indices in an Array](src/k_distant_index/k_distant_index.h)
