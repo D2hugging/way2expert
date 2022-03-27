@@ -58,3 +58,9 @@
 - [valid anagram](src/problem/valid_anagram.h)
 - [valid sudoku](src/problem/valid_sudoku.h)
 - [zigzag level order](src/problem/zigzag_level_order.h)
+
+## how to test
+
+```bash
+bazel test //src/problem/...
+```
