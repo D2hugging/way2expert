@@ -1,7 +1,7 @@
 #ifndef LIST_NODE_H_
 #define LIST_NODE_H_
 
-namespace foo {
+namespace problem {
 
 struct ListNode {
   int val;
@@ -9,6 +9,6 @@ struct ListNode {
   ListNode(int x) : val(x), next(nullptr) {}
 };
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

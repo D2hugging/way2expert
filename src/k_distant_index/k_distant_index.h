@@ -3,7 +3,7 @@
 
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 // You are given a 0-indexed integer array nums and two integers key and k. A
 // k-distant index is an index i of nums for which there exists at least one
@@ -58,6 +58,6 @@ std::vector<int> FindKDistantIndices(std::vector<int>& nums, int key, int k) {
   return ans;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

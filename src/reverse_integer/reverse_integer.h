@@ -3,7 +3,7 @@
 
 #include <limits.h>
 
-namespace foo {
+namespace problem {
 
 int reverseInteger(int x) {
   long long res = 0;
@@ -14,6 +14,6 @@ int reverseInteger(int x) {
   return (res < INT_MIN || res > INT_MAX) ? 0 : res;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

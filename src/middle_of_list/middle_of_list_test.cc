@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class MiddleNodeTest : public ::testing::Test {
  protected:
@@ -71,4 +71,4 @@ TEST_F(MiddleNodeTest, case2) {
    ASSERT_EQ(output->next->next->next, nullptr);
 }
 
-}  // namespace foo
+}  // namespace problem

@@ -3,7 +3,7 @@
 
 #include "src/list_node/list_node.h"
 
-namespace foo {
+namespace problem {
 
 // Given the head of a linked list, rotate the list to the right by k places.
 // The number of nodes in the list is in the range [0, 500].
@@ -29,6 +29,6 @@ ListNode* RotateRight(ListNode* head, int k) {
   return new_head;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

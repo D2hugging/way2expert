@@ -6,7 +6,7 @@
 
 #include "src/tree_node/tree_node.h"
 
-namespace foo {
+namespace problem {
 
 std::vector<std::vector<int>> zigzagLevelOrder(TreeNode* root) {
   std::vector<std::vector<int>> ret;
@@ -32,6 +32,6 @@ std::vector<std::vector<int>> zigzagLevelOrder(TreeNode* root) {
   return ret;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

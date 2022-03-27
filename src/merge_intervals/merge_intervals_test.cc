@@ -3,7 +3,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class MergeIntervalsTest : public ::testing::Test {
  protected:
@@ -48,4 +48,4 @@ TEST_F(MergeIntervalsTest, case1) {
 
 }
 
-}  // namespace foo
+}  // namespace problem

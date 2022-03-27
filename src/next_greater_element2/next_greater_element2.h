@@ -4,7 +4,7 @@
 #include <stack>
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 // Given a circular integer array nums (i.e., the next element of
 // nums[nums.length - 1] is nums[0]), return the next greater number for every
@@ -37,6 +37,6 @@ std::vector<int> NextGreaterElement2(std::vector<int>& nums) {
   return ans;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

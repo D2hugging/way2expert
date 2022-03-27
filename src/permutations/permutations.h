@@ -3,7 +3,7 @@
 
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 // Given an array nums of distinct integers, return all the possible
 // permutations. You can return the answer in any order.
@@ -26,6 +26,6 @@ std::vector<std::vector<int>> Permute(std::vector<int>& nums) {
   return output;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class MyQueueTest : public ::testing::Test {
  protected:
@@ -55,4 +55,4 @@ TEST_F(MyQueueTest, case_pop) {
   ASSERT_TRUE(q_.empty());
 }
 
-}  // namespace foo
+}  // namespace problem

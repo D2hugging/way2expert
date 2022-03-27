@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class GenerateParenthesisTest : public ::testing::Test {
  protected:
@@ -52,4 +52,4 @@ TEST_F(GenerateParenthesisTest, case1) {
 
 }
 
-}  // namespace foo
+}  // namespace problem

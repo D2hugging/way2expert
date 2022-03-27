@@ -3,7 +3,7 @@
 
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 // Given a sorted array of distinct integers and a target value, return the
 // index if the target is found. If not, return the index where it would be if
@@ -35,6 +35,6 @@ int SearchInsert(std::vector<int>& nums, int target) {
   return left;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

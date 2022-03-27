@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class ReverseWords3Test : public ::testing::Test {
  protected:
@@ -64,4 +64,4 @@ TEST_F(ReverseWords3Test, case2) {
   ASSERT_EQ(output[7], 'D');
 }
 
-}  // namespace foo
+}  // namespace problem

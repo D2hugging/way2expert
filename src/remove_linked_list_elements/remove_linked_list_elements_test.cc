@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class RemoveElementsTest : public ::testing::Test {
  protected:
@@ -120,4 +120,4 @@ TEST_F(RemoveElementsTest, case6) {
    ASSERT_EQ(output, nullptr);
 }
 
-}  // namespace foo
+}  // namespace problem

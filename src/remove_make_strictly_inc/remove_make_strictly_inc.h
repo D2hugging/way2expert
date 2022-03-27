@@ -3,7 +3,7 @@
 
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 // Given a 0-indexed integer array nums, return true if it can be made strictly
 // increasing after removing exactly one element, or false otherwise. If the
@@ -26,6 +26,6 @@ bool CanBeIncreasing(std::vector<int>& nums) {
   return cnt <= 1;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 // Given n pairs of parentheses, write a function to generate all combinations
 // of well-formed parentheses.
@@ -30,6 +30,6 @@ std::vector<std::string> GenerateParenthesis(int n) {
   return output;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

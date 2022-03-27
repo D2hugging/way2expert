@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class LetterCasePermutationTest : public ::testing::Test {
  protected:
@@ -62,4 +62,4 @@ auto s = "3z4";
   ASSERT_EQ(output[1], expected[1]);
 }
 
-}  // namespace foo
+}  // namespace problem

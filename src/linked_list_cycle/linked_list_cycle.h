@@ -3,7 +3,7 @@
 
 #include "src/list_node/list_node.h"
 
-namespace foo {
+namespace problem {
 
 // Given head, the head of a linked list, determine if the linked list has a
 // cycle in it.
@@ -30,6 +30,6 @@ bool HasCycle(ListNode* head) {
   return false;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

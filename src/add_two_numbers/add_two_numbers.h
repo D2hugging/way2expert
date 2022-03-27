@@ -3,7 +3,7 @@
 
 #include "src/list_node/list_node.h"
 
-namespace foo {
+namespace problem {
 
 // The digits are stored in reverse order
 ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
@@ -35,6 +35,6 @@ ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
     return head;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

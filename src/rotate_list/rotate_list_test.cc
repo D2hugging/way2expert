@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class RotateRightTest : public ::testing::Test {
  protected:
@@ -64,4 +64,4 @@ TEST_F(RotateRightTest, case2) {
    ASSERT_EQ(output->next->next->val, 1);
 }
 
-}  // namespace foo
+}  // namespace problem

@@ -6,7 +6,7 @@
 
 #include "src/tree_node/tree_node.h"
 
-namespace foo {
+namespace problem {
 
 std::vector<int> InorderTraversal(TreeNode* root) {
   if (!root) return {};
@@ -27,6 +27,6 @@ std::vector<int> InorderTraversal(TreeNode* root) {
   return ans;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

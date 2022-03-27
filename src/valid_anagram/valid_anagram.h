@@ -4,7 +4,7 @@
 #include <string>
 #include <unordered_map>
 
-namespace foo {
+namespace problem {
 
 // Given two strings s and t, return true if t is an anagram of s, and false
 // otherwise.
@@ -33,6 +33,6 @@ bool IsAnagram(std::string s, std::string t) {
   return true;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

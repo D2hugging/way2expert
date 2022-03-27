@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class MatrixReshapeTest : public ::testing::Test {
  protected:
@@ -60,4 +60,4 @@ TEST_F(MatrixReshapeTest, case2) {
   ASSERT_EQ(output[1][1], 4);
 }
 
-}  // namespace foo
+}  // namespace problem

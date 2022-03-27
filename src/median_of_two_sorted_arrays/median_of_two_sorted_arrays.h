@@ -3,7 +3,7 @@
 
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 double findMedianSortedArrays(const std::vector<int>& nums1,
                               const std::vector<int>& nums2) {
@@ -31,6 +31,6 @@ double findMedianSortedArrays(const std::vector<int>& nums1,
   }
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

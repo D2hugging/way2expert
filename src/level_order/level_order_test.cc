@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class LevelOrderTest : public ::testing::Test {
  protected:
@@ -55,4 +55,4 @@ TEST_F(LevelOrderTest, case1) {
 
 }
 
-}  // namespace foo
+}  // namespace problem

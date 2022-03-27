@@ -3,7 +3,7 @@
 
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 // There is an integer array nums sorted in ascending order (with distinct
 // values).
@@ -38,6 +38,6 @@ int SearchRotatedSorted(std::vector<int>& nums, int target) {
   return -1;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

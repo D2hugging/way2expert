@@ -4,7 +4,7 @@
 #include <set>
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 // You are given an integer array nums and an integer k. Append k unique
 // positive integers that do not appear in nums to nums such that the resulting
@@ -28,6 +28,6 @@ long long MinimalKSum(std::vector<int>& nums, int k) {
   return ans;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

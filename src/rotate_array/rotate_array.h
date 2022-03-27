@@ -4,7 +4,7 @@
 #include <algorithm>
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 // Given an array, rotate the array to the right by k steps, where k is
 // non-negative.
@@ -38,6 +38,6 @@ void Rotate(std::vector<int>& nums, int k) {
   }
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

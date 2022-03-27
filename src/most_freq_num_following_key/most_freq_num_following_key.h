@@ -3,7 +3,7 @@
 
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 // You are given a 0-indexed integer array nums. You are also given an integer
 // key, which is present in nums. For every unique integer target in nums, count
@@ -39,6 +39,6 @@ int MostFrequentFollowingKey(std::vector<int>& nums, int key) {
   return max_target;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

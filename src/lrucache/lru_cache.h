@@ -5,7 +5,7 @@
 #include <list>
 #include <unordered_map>
 
-namespace foo {
+namespace problem {
 
 template <typename K, typename V>
 class LRUCache {
@@ -46,6 +46,6 @@ class LRUCache {
   std::unordered_map<K, decltype(list_.begin())> um_;
 };
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

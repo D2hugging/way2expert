@@ -5,7 +5,7 @@
 #include <string>
 #include <unordered_set>
 
-namespace foo {
+namespace problem {
 
 // Given a string s, find the length of the longest substring without repeating
 // characters.
@@ -26,6 +26,6 @@ int LengthOfLongestSubstring(std::string s) {
   return ans;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

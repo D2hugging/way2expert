@@ -3,7 +3,7 @@
 
 #include "src/list_node/list_node.h"
 
-namespace foo {
+namespace problem {
 
 // Given the head of a linked list, remove the nth node from the end of the list
 // and return its head.
@@ -25,6 +25,6 @@ ListNode* RemoveNthFromEnd(ListNode* head, int n) {
   return head;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

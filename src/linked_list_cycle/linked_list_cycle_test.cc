@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class HasCycleTest : public ::testing::Test {
  protected:
@@ -72,4 +72,4 @@ TEST_F(HasCycleTest, case3) {
    ASSERT_EQ(output, false);
 }
 
-}  // namespace foo
+}  // namespace problem

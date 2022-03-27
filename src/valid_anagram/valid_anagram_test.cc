@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class IsAnagramTest : public ::testing::Test {
  protected:
@@ -55,4 +55,4 @@ TEST_F(IsAnagramTest, case2) {
   ASSERT_EQ(output, false);
 }
 
-}  // namespace foo
+}  // namespace problem

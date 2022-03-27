@@ -4,7 +4,7 @@
 #include <vector>
 #include <algorithm>
 
-namespace foo {
+namespace problem {
 
 // longest strictly increasing subsequence.
 int lengthOfLIS(const std::vector<int>& nums) {
@@ -23,6 +23,6 @@ int lengthOfLIS(const std::vector<int>& nums) {
     return *std::max_element(dp.begin(), dp.end());
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

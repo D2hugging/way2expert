@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class NextGreaterElement1Test : public ::testing::Test {
  protected:
@@ -62,4 +62,4 @@ TEST_F(NextGreaterElement1Test, case2) {
 }
 
 
-}  // namespace foo
+}  // namespace problem

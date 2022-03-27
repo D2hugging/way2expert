@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class PostorderTraversalTest : public ::testing::Test {
  protected:
@@ -67,4 +67,4 @@ TEST_F(PostorderTraversalTest, case3) {
   EXPECT_EQ(output[0], 1);
 }
 
-}  // namespace foo
+}  // namespace problem

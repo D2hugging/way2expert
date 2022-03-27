@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class MergeTwoListsTest : public ::testing::Test {
  protected:
@@ -76,4 +76,4 @@ TEST_F(MergeTwoListsTest, case3) {
   ASSERT_EQ(output->next, nullptr);
 }
 
-}  // namespace foo
+}  // namespace problem

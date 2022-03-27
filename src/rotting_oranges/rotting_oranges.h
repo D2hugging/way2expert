@@ -4,7 +4,7 @@
 #include <queue>
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 // You are given an m x n grid where each cell can have one of three values:
 
@@ -56,6 +56,6 @@ int OrangesRotting(std::vector<std::vector<int>>& grid) {
   return minute;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

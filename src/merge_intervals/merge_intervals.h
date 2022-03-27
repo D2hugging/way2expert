@@ -4,7 +4,7 @@
 #include <vector>
 #include <algorithm>
 
-namespace foo {
+namespace problem {
 
 // Given an array of intervals where intervals[i] = [starti, endi], merge all
 // overlapping intervals, and return an array of the non-overlapping intervals
@@ -33,6 +33,6 @@ std::vector<std::vector<int>> MergeIntervals(std::vector<std::vector<int>>& inte
   return ans;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

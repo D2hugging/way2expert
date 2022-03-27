@@ -4,7 +4,7 @@
 #include <vector>
 #include <limits.h>
 
-namespace foo {
+namespace problem {
 
 // Given an integer array nums, find the contiguous subarray (containing at
 // least one number) which has the largest sum and return its sum.
@@ -24,6 +24,6 @@ int MaxSubArray(std::vector<int>& nums) {
   return max_so_far;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

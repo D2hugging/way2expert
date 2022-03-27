@@ -5,7 +5,7 @@
 #include <unordered_set>
 #include <cstddef>
 
-namespace foo {
+namespace problem {
 
 int longestConsecutive(const std::vector<int>& nums) {
     std::unordered_set<int> us(nums.begin(), nums.end());
@@ -22,6 +22,6 @@ int longestConsecutive(const std::vector<int>& nums) {
     return ans;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

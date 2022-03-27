@@ -3,7 +3,7 @@
 
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 // Given an integer numRows, return the first numRows of Pascal's triangle.
 
@@ -20,6 +20,6 @@ std::vector<std::vector<int>> GeneratePascalTriangle(int numRows) {
         return ans;
     }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

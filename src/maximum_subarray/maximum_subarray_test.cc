@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class MaxSubArrayTest : public ::testing::Test {
  protected:
@@ -61,4 +61,4 @@ TEST_F(MaxSubArrayTest, case3) {
   ASSERT_EQ(output, 23);
 }
 
-}  // namespace foo
+}  // namespace problem

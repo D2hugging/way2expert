@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 void LetterCasePermutationHelper(std::string s, int index, std::string current,
                                  std::vector<std::string>& output) {
@@ -32,6 +32,6 @@ std::vector<std::string> LetterCasePermutation(std::string s) {
   return output;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

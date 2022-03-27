@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class GeneratePascalTriangleTest : public ::testing::Test {
  protected:
@@ -61,4 +61,4 @@ TEST_F(GeneratePascalTriangleTest, case2) {
   ASSERT_EQ(output[0][0], 1);
 }
 
-}  // namespace foo
+}  // namespace problem

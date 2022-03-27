@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class SearchRotatedSortedTest : public ::testing::Test {
  protected:
@@ -59,4 +59,4 @@ TEST_F(SearchRotatedSortedTest, case3) {
   EXPECT_EQ(output, -1);
 }
 
-}  // namespace foo
+}  // namespace problem

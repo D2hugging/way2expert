@@ -4,7 +4,7 @@
 #include <vector>
 #include <unordered_map>
 
-namespace foo {
+namespace problem {
 
 // We define a harmonious array as an array where the difference between its
 // maximum value and its minimum value is exactly 1.
@@ -30,6 +30,6 @@ int FindLHS(std::vector<int>& nums) {
   return maxl;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

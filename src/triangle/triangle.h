@@ -3,7 +3,7 @@
 
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 // Given a triangle array, return the minimum path sum from top to bottom.
 
@@ -21,6 +21,6 @@ int MinimumTotal(std::vector<std::vector<int>>& triangle) {
   return ans[0];
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

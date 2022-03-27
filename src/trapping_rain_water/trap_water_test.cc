@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class TrapWaterTest : public ::testing::Test {
  protected:
@@ -49,4 +49,4 @@ TEST_F(TrapWaterTest, case2) {
   EXPECT_EQ(output, 9);
 }
 
-}  // namespace foo
+}  // namespace problem

@@ -4,7 +4,7 @@
 #include <unordered_set>
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 // Determine if a 9 x 9 Sudoku board is valid. Only the filled cells need to be
 // validated according to the following rules:
@@ -38,6 +38,6 @@ bool IsValidSudoku(std::vector<std::vector<char>>& board) {
   return true;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

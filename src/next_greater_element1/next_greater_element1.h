@@ -5,7 +5,7 @@
 #include <stack>
 #include <unordered_map>
 
-namespace foo {
+namespace problem {
 
 // The next greater element of some element x in an array is the first greater
 // element that is to the right of x in the same array.
@@ -41,6 +41,6 @@ std::vector<int> NextGreaterElement1(std::vector<int>& nums1, std::vector<int>& 
   return ans;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

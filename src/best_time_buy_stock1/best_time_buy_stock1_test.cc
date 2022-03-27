@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class MaxProfit1Test : public ::testing::Test {
  protected:
@@ -52,4 +52,4 @@ TEST_F(MaxProfit1Test, case2) {
   ASSERT_EQ(output, 0);
 }
 
-}  // namespace foo
+}  // namespace problem

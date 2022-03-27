@@ -3,7 +3,7 @@
 
 #include "src/list_node/list_node.h"
 
-namespace foo {
+namespace problem {
 
 // You are given the heads of two sorted linked lists list1 and list2.
 
@@ -44,6 +44,6 @@ ListNode* MergeTwoLists(ListNode* list1, ListNode* list2) {
   return head;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

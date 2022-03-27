@@ -4,7 +4,7 @@
 #include <algorithm>
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 // You are given an array prices where prices[i] is the price of a given stock
 // on the ith day.
@@ -27,6 +27,6 @@ int MaxProfit1(std::vector<int>& prices) {
   return max_profit;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

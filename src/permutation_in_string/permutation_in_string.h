@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 // Given two strings s1 and s2, return true if s2 contains a permutation of s1,
 // or false otherwise.
@@ -31,6 +31,6 @@ bool CheckInclusion(std::string s1, std::string s2) {
   return false;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

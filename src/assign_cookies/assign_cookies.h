@@ -4,7 +4,7 @@
 #include <algorithm>
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 // Assume you are an awesome parent and want to give your children some cookies.
 // But, you should give each child at most one cookie.
@@ -29,6 +29,6 @@ int FindContentChildren(std::vector<int>& g, std::vector<int>& s) {
   return given;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

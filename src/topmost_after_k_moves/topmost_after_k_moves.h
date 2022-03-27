@@ -4,7 +4,7 @@
 #include <algorithm>
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 // You are given a 0-indexed integer array nums representing the contents of a
 // pile, where nums[0] is the topmost element of the pile.
@@ -47,6 +47,6 @@ int MaximumTop(std::vector<int>& nums, int k) {
   return max_left;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

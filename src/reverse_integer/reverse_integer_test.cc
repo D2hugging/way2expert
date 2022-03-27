@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class ReverseIntegerTest : public ::testing::Test {
  protected:
@@ -59,4 +59,4 @@ TEST_F(ReverseIntegerTest, caseZero) {
    ASSERT_EQ(output, answer);
 }
 
-}  // namespace foo
+}  // namespace problem

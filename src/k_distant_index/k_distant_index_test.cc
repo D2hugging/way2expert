@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class FindKDistantIndicesTest : public ::testing::Test {
  protected:
@@ -64,4 +64,4 @@ TEST_F(FindKDistantIndicesTest, case2) {
   ASSERT_EQ(output[4], 4);
 }
 
-}  // namespace foo
+}  // namespace problem

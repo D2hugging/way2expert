@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class IsValidSudokuTest : public ::testing::Test {
  protected:
@@ -89,4 +89,4 @@ TEST_F(IsValidSudokuTest, case2) {
   ASSERT_EQ(output, false);
 }
 
-}  // namespace foo
+}  // namespace problem

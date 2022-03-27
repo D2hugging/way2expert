@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class LongestIncreasingSubsequence : public ::testing::Test {
  protected:
@@ -55,4 +55,4 @@ TEST_F(LongestIncreasingSubsequence, SameValue) {
   EXPECT_EQ(foo::lengthOfLIS(arr), 1);
 }
 
-}  // namespace foo
+}  // namespace problem

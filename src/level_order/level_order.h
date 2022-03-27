@@ -5,7 +5,7 @@
 #include <queue>
 #include "src/tree_node/tree_node.h"
 
-namespace foo {
+namespace problem {
 
 std::vector<std::vector<int>> levelOrder(TreeNode* root) {
   std::vector<std::vector<int>> ans;
@@ -27,6 +27,6 @@ std::vector<std::vector<int>> levelOrder(TreeNode* root) {
   return ans;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

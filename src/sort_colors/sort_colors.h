@@ -3,7 +3,7 @@
 
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 // 0/1/2 sort three color flag
 void sortColors(std::vector<int>& nums) {
@@ -24,6 +24,6 @@ void sortColors(std::vector<int>& nums) {
   }
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

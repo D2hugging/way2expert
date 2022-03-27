@@ -3,7 +3,7 @@
 
 #include "src/list_node/list_node.h"
 
-namespace foo {
+namespace problem {
 
 // Given the head of a singly linked list, return the middle node of the linked
 // list.
@@ -20,6 +20,6 @@ ListNode* MiddleNode(ListNode* head) {
   return fast ? slow->next : slow;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

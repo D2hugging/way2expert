@@ -1,7 +1,7 @@
 #ifndef TREE_NODE_H_
 #define TREE_NODE_H_
 
-namespace foo {
+namespace problem {
 
 struct TreeNode {
   int val;
@@ -13,6 +13,6 @@ struct TreeNode {
       : val(x), left(left), right(right) {}
 };
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

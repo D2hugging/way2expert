@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class MedianofTwoSortedArraysTest : public ::testing::Test {
  protected:
@@ -59,4 +59,4 @@ TEST_F(MedianofTwoSortedArraysTest, Odd) {
   EXPECT_EQ(foo::findMedianSortedArrays(arr1, arr2), 3.0);
 }
 
-}  // namespace foo
+}  // namespace problem

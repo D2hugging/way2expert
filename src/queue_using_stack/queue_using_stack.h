@@ -20,7 +20,7 @@
 // your language, the stack may not be supported natively. You may simulate a
 // stack using a list or deque (double-ended queue) as long as you use only a
 // stack's standard operations.
-namespace foo {
+namespace problem {
 
 class MyQueue {
  public:
@@ -53,6 +53,6 @@ class MyQueue {
   std::stack<int> secondary_;
 };
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

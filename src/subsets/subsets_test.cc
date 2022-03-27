@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 void print_arrays(std::vector<std::vector<int>> arrays) {
   for (auto& array : arrays) {
@@ -61,4 +61,4 @@ TEST_F(SubsetsTest, case1) {
   EXPECT_EQ(output2[7].size(), 3);
 }
 
-}  // namespace foo
+}  // namespace problem

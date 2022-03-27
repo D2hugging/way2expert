@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class RemoveNthFromEndTest : public ::testing::Test {
  protected:
@@ -71,4 +71,4 @@ TEST_F(RemoveNthFromEndTest, case3) {
   ASSERT_EQ(output->next, nullptr);
 }
 
-}  // namespace foo
+}  // namespace problem

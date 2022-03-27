@@ -4,7 +4,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class LRUCacheTest : public ::testing::Test {
  protected:
@@ -55,4 +55,4 @@ TEST_F(LRUCacheTest, case1) {
   EXPECT_FALSE(got);
 }
 
-}  // namespace foo
+}  // namespace problem

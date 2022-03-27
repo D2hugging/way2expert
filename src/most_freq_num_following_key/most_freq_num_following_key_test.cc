@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class MostFrequentFollowingKeyTest : public ::testing::Test {
  protected:
@@ -49,4 +49,4 @@ TEST_F(MostFrequentFollowingKeyTest, case2) {
   EXPECT_EQ(output, 2);
 }
 
-}  // namespace foo
+}  // namespace problem

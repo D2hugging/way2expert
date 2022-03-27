@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class LengthOfLongestSubstringTest : public ::testing::Test {
  protected:
@@ -66,4 +66,4 @@ TEST_F(LengthOfLongestSubstringTest, case3) {
   ASSERT_EQ(output, 3);
 }
 
-}  // namespace foo
+}  // namespace problem

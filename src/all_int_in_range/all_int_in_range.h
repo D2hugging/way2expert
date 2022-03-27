@@ -3,7 +3,7 @@
 
 #include <vector>
 
-namespace foo {
+namespace problem {
 // You are given a 2D integer array ranges and two integers left and right. Each
 // ranges[i] = [starti, endi] represents an inclusive interval between starti
 // and endi.
@@ -26,6 +26,6 @@ bool IsCovered(std::vector<std::vector<int>>& ranges, int left, int right) {
   return true;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

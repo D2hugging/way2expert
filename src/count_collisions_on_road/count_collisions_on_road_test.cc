@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class CountCollisionsTest : public ::testing::Test {
  protected:
@@ -61,4 +61,4 @@ TEST_F(CountCollisionsTest, case2) {
   ASSERT_EQ(output, 0);
 }
 
-}  // namespace foo
+}  // namespace problem

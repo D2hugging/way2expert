@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class LongestConsecutiveTest : public ::testing::Test {
  protected:
@@ -50,4 +50,4 @@ TEST_F(LongestConsecutiveTest, case2) {
 }
 
 
-}  // namespace foo
+}  // namespace problem

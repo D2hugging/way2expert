@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class MinimumTotalTest : public ::testing::Test {
  protected:
@@ -62,4 +62,4 @@ TEST_F(MinimumTotalTest, case2) {
   ASSERT_EQ(output, expected);
 }
 
-}  // namespace foo
+}  // namespace problem

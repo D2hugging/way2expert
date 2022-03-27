@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-namespace foo {
+namespace problem {
 
 class AddTwoNumbersTest : public ::testing::Test {
  protected:
@@ -84,4 +84,4 @@ TEST_F(AddTwoNumbersTest, caseCarry) {
 
 }
 
-}  // namespace foo
+}  // namespace problem

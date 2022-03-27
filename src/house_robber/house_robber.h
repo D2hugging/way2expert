@@ -3,7 +3,7 @@
 
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 // You are a professional robber planning to rob houses along a street. Each
 // house has a certain amount of money stashed, the only constraint stopping you
@@ -29,6 +29,6 @@ int HouseRob(std::vector<int>& nums) {
   return dp[size - 1];
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

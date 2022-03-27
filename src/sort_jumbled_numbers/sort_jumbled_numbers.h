@@ -5,7 +5,7 @@
 #include <stack>
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 // You are given a 0-indexed integer array mapping which represents the mapping
 // rule of a shuffled decimal system. mapping[i] = j means digit i should be
@@ -59,6 +59,6 @@ std::vector<int> SortJumbled(std::vector<int>& mapping,
   return ans;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

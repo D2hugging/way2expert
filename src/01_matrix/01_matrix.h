@@ -6,7 +6,7 @@
 #include <queue>
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 // Given an m x n binary matrix mat, return the distance of the nearest 0 for
 // each cell.
@@ -46,6 +46,6 @@ std::vector<std::vector<int>> UpdateMatrix(std::vector<std::vector<int>>& mat) {
   return grid;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif

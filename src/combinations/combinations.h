@@ -3,7 +3,7 @@
 
 #include <vector>
 
-namespace foo {
+namespace problem {
 
 // Given two integers n and k, return all possible combinations of k numbers out
 // of the range [1, n].
@@ -30,6 +30,6 @@ std::vector<std::vector<int>> Combine(int n, int k) {
   return output;
 }
 
-}  // namespace foo
+}  // namespace problem
 
 #endif
