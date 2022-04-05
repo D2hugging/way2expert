@@ -1,4 +1,87 @@
 cc_library(
+    name = "is_subsequence",
+    hdrs = glob([
+        "is_subsequence.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "is_subsequence_test",
+    srcs = [
+        "is_subsequence_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":is_subsequence",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
+cc_library(
+    name = "are_almost_equal",
+    hdrs = glob([
+        "are_almost_equal.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "are_almost_equal_test",
+    srcs = [
+        "are_almost_equal_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":are_almost_equal",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
+cc_library(
+    name = "happy_number",
+    hdrs = glob([
+        "happy_number.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "happy_number_test",
+    srcs = [
+        "happy_number_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":happy_number",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
+cc_library(
+    name = "sum_of_left_leaves",
+    hdrs = glob([
+        "sum_of_left_leaves.h",
+    ]),
+    deps = [
+        ":tree_node",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "sum_of_left_leaves_test",
+    srcs = [
+        "sum_of_left_leaves_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":sum_of_left_leaves",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
+cc_library(
     name = "01_matrix",
     hdrs = glob([
         "01_matrix.h",
