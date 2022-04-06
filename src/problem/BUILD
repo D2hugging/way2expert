@@ -1,4 +1,24 @@
 cc_library(
+    name = "jump_game1",
+    hdrs = glob([
+        "jump_game1.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "jump_game1_test",
+    srcs = [
+        "jump_game1_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":jump_game1",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
+cc_library(
     name = "is_subsequence",
     hdrs = glob([
         "is_subsequence.h",
