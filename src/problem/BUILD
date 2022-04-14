@@ -1,3 +1,86 @@
+
+
+
+cc_library(
+    name = "k_missing_positive",
+    hdrs = glob([
+        "k_missing_positive.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "k_missing_positive_test",
+    srcs = [
+        "k_missing_positive_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":k_missing_positive",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
+cc_library(
+    name = "count_negative",
+    hdrs = glob([
+        "count_negative.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "count_negative_test",
+    srcs = [
+        "count_negative_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":count_negative",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
+cc_library(
+    name = "largest_integer",
+    hdrs = glob([
+        "largest_num_after_digit_swaps_byparity.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "largest_integer_test",
+    srcs = [
+        "largest_num_after_digit_swaps_byparity_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":largest_integer",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
+cc_library(
+    name = "max_product_k_incr",
+    hdrs = glob([
+        "max_product_after_k_incre.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "max_product_k_incr_test",
+    srcs = [
+        "max_product_after_k_incre_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":max_product_k_incr",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
 cc_library(
     name = "jump_game1",
     hdrs = glob([
