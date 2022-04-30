@@ -12,6 +12,8 @@
 - [container with most water](src/problem/max_area.h)
 - [count collisions on a road](src/problem/count_collisions_on_road.h)
 - [count negative in a matrix](src/problem/count_negative.h)
+- [find first last position in a sorted array](src/problem/find_first_last_position_sorted.h)
+- [find minimum element in a rotated sorted array](src/problem/find_minimum_rotated_sorted.h)
 - [generate parenthesis](src/problem/generate_parenthesis.h)
 - [house robber](src/problem/house_robber.h)
 - [inorder_traversl](src/problem/inorder_traversal.h)

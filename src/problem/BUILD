@@ -1,5 +1,44 @@
 
 
+cc_library(
+    name = "find_first_last_position_sorted",
+    hdrs = glob([
+        "find_first_last_position_sorted.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "find_first_last_position_sorted_test",
+    srcs = [
+        "find_first_last_position_sorted_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":find_first_last_position_sorted",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
+cc_library(
+    name = "find_minimum_rotated_sorted",
+    hdrs = glob([
+        "find_minimum_rotated_sorted.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "find_minimum_rotated_sorted_test",
+    srcs = [
+        "find_minimum_rotated_sorted_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":find_minimum_rotated_sorted",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
 
 cc_library(
     name = "k_missing_positive",
