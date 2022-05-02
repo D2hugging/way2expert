@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package recsys;
+
+message RecRequest {
+    string seq = 1;     // request id
+    string user = 2;   // user identifer
+}
+
+message Item {
+    int64 id = 1;
+}
+
+message RecResponse {
+    string seq = 1;     // response id
+    repeated Item item_list = 2;    // item list   
+}
+
+service RecService {
+    rpc GetRecItems(RecRequest) returns(RecResponse);
+}

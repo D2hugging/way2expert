@@ -2,6 +2,20 @@ workspace(name = "way2expert")
 
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
+# rules_cc defines rules for generating C++ code from Protocol Buffers.
+http_archive(
+    name = "rules_cc",
+    sha256 = "35f2fb4ea0b3e61ad64a369de284e4fbbdcdba71836a5555abb5e194cf119509",
+    strip_prefix = "rules_cc-624b5d59dfb45672d4239422fa1e3de1822ee110",
+    urls = [
+        # "https://mirror.bazel.build/github.com/bazelbuild/rules_cc/archive/624b5d59dfb45672d4239422fa1e3de1822ee110.tar.gz",
+        "https://github.com/bazelbuild/rules_cc/archive/624b5d59dfb45672d4239422fa1e3de1822ee110.tar.gz",
+    ],
+)
+
+load("@rules_cc//cc:repositories.bzl", "rules_cc_dependencies")
+rules_cc_dependencies()
+
 # GoogleTest/GoogleMock framework. Used by most unit-tests.
 http_archive(
     name = "com_google_googletest",  # 2022-01-28T15:27:11Z
@@ -9,3 +23,60 @@ http_archive(
     strip_prefix = "googletest-28e1da21d8d677bc98f12ccc7fc159ff19e8e817",
     urls = ["https://github.com/google/googletest/archive/28e1da21d8d677bc98f12ccc7fc159ff19e8e817.zip"],
 )
+
+http_archive(
+    name = "bazel_skylib",
+    urls = [
+        "https://mirror.bazel.build/github.com/bazelbuild/bazel-skylib/releases/download/1.2.1/bazel-skylib-1.2.1.tar.gz",
+        "https://github.com/bazelbuild/bazel-skylib/releases/download/1.2.1/bazel-skylib-1.2.1.tar.gz",
+    ],
+    sha256 = "f7be3474d42aae265405a592bb7da8e171919d74c16f082a5457840f06054728",
+)
+load("@bazel_skylib//:workspace.bzl", "bazel_skylib_workspace")
+bazel_skylib_workspace()
+
+# yaml
+http_archive(
+    name = "yaml_cpp",
+    sha256 = "4ae3d55effd82de17b85827c253318ad055d1380da82728eec9093aebb1336be",
+    strip_prefix = "yaml-cpp-master",
+    urls = ["https://github.com/jbeder/yaml-cpp/archive/refs/heads/master.zip"],
+)
+
+# # rules_proto defines abstract rules for building Protocol Buffers.
+# http_archive(
+#     name = "rules_proto",
+#     sha256 = "2490dca4f249b8a9a3ab07bd1ba6eca085aaf8e45a734af92aad0c42d9dc7aaf",
+#     strip_prefix = "rules_proto-218ffa7dfa5408492dc86c01ee637614f8695c45",
+#     urls = [
+#         "https://github.com/bazelbuild/rules_proto/archive/218ffa7dfa5408492dc86c01ee637614f8695c45.tar.gz",
+#     ],
+# )
+
+# load("@rules_proto//proto:repositories.bzl", "rules_proto_dependencies", "rules_proto_toolchains")
+# rules_proto_dependencies()
+# rules_proto_toolchains()
+
+# # protobuf
+# http_archive(
+#     name = "com_google_protobuf",
+#     sha256 = "bf0e5070b4b99240183b29df78155eee335885e53a8af8683964579c214ad301",
+#     strip_prefix = "protobuf-3.14.0",
+#     urls = ["https://github.com/protocolbuffers/protobuf/archive/refs/tags/v3.14.0.zip"],
+# )
+
+
+##### gRPC Rules for Bazel
+##### See https://github.com/grpc/grpc/blob/master/src/cpp/README.md#make
+http_archive(
+    name = "com_github_grpc_grpc",
+    sha256 = "4f0ad3557539a3d6edfad1693a92bd21acd3a6c3d610faa4714d64ad1d0a8072",
+    strip_prefix = "grpc-1.30.0",
+    urls = [
+        "https://github.com/grpc/grpc/archive/refs/tags/v1.30.0.zip",
+    ],
+)
+load("@com_github_grpc_grpc//bazel:grpc_deps.bzl", "grpc_deps")
+grpc_deps()
+load("@com_github_grpc_grpc//bazel:grpc_extra_deps.bzl", "grpc_extra_deps")
+grpc_extra_deps()
