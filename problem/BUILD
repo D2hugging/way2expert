@@ -1,4 +1,22 @@
+cc_library(
+    name = "divide_into_equal_skill",
+    hdrs = glob([
+        "divide_into_equal_skill.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
 
+cc_test(
+    name = "divide_into_equal_skill_test",
+    srcs = [
+        "divide_into_equal_skill_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":divide_into_equal_skill",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
 
 cc_library(
     name = "find_first_last_position_sorted",
