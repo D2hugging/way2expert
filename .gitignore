@@ -34,3 +34,5 @@
 # About project
 bazel-*
 .vscode/
+
+.DS_Store

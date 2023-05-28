@@ -1,4 +1,24 @@
 cc_library(
+    name = "matrix_spiral",
+    hdrs = glob([
+        "matrix_spiral.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "matrix_spiral_test",
+    srcs = [
+        "matrix_spiral_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":matrix_spiral",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
+cc_library(
     name = "divide_into_equal_skill",
     hdrs = glob([
         "divide_into_equal_skill.h",
