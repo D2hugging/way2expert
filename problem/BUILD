@@ -1,3 +1,24 @@
+
+cc_library(
+    name = "minimum_cost_all_characters_equal",
+    hdrs = glob([
+        "minimum_cost_all_characters_equal.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "minimum_cost_all_characters_equal_test",
+    srcs = [
+        "minimum_cost_all_characters_equal_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":minimum_cost_all_characters_equal",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
 cc_library(
     name = "matrix_spiral",
     hdrs = glob([

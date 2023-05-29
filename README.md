@@ -38,6 +38,7 @@
 - [merge intervals](problem/merge_intervals.h)
 - [merge two sorted list](problem/merge_two_sorted_list.h)
 - [middle of list](problem/middle_of_list.h)
+- [minimum cost to mqke all characters equal](problem/minimum_cost_all_characters_equal.h)
 - [most frequently number following key in an array](problem/most_freq_num_following_key.h)
 - [next greater element 1](problem/next_greater_element1.h)
 - [next greater element 2](problem/next_greater_element2.h)
