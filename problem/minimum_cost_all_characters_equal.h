@@ -41,8 +41,8 @@ namespace problem {
 long long MinimumCost(const std::string& s) {
   long long output = 0;
   int n = s.size();
-  for (int i = 0; i < n - 1; ++i) {
-    if (s[i] != s[i + 1]) output += std::min(i + 1, n - i - 1);
+  for (int i = 1; i < n; ++i) {
+    if (s[i - 1] != s[i]) output += std::min(i, n - i);
   }
 
   return output;
