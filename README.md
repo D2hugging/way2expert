@@ -23,6 +23,7 @@
 - [largest number after digit swap by parity](problem/largest_num_after_digit_swaps_byparity.h)
 - [letter case permutation](problem/letter_case_permutation.h)
 - [level order](problem/level_order.h)
+- [lexicographically small string](problem/lexicographically_small_string.h)
 - [linked list cycle](problem/linked_list_cycle.h)
 - [longest consecutive sequence](problem/longest_consecutive_sequence.h)
 - [longest harmonious subsequence](problem/longest_harmonious_subsequence.h)

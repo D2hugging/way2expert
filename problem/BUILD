@@ -1,3 +1,22 @@
+cc_library(
+    name = "lexicographically_small_string",
+    hdrs = glob([
+        "lexicographically_small_string.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "lexicographically_small_string_test",
+    srcs = [
+        "lexicographically_small_string_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":lexicographically_small_string",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
 
 cc_library(
     name = "minimum_cost_all_characters_equal",
