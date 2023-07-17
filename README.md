@@ -41,6 +41,7 @@
 - [middle of list](problem/middle_of_list.h)
 - [minimum cost to mqke all characters equal](problem/minimum_cost_all_characters_equal.h)
 - [most frequently number following key in an array](problem/most_freq_num_following_key.h)
+- [nearest exit from entrance in maze](problem/nearest_exit_in_maze.h)
 - [next greater element 1](problem/next_greater_element1.h)
 - [next greater element 2](problem/next_greater_element2.h)
 - [pascal_triangle](problem/pascal_triangle.h)

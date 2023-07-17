@@ -1,3 +1,24 @@
+
+cc_library(
+    name = "nearest_exit_in_maze",
+    hdrs = glob([
+        "nearest_exit_in_maze.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "nearest_exit_in_maze_test",
+    srcs = [
+        "nearest_exit_in_maze_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":nearest_exit_in_maze",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
 cc_library(
     name = "lexicographically_small_string",
     hdrs = glob([
