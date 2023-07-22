@@ -1,5 +1,45 @@
 
 cc_library(
+    name = "max_detonation",
+    hdrs = glob([
+        "max_detonation.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "max_detonation_test",
+    srcs = [
+        "max_detonation_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":max_detonation",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
+cc_library(
+    name = "max_sum_hourglass",
+    hdrs = glob([
+        "max_sum_hourglass.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "max_sum_hourglass_test",
+    srcs = [
+        "max_sum_hourglass_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":max_sum_hourglass",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
+cc_library(
     name = "nearest_exit_in_maze",
     hdrs = glob([
         "nearest_exit_in_maze.h",
