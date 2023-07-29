@@ -1,5 +1,29 @@
 
 cc_library(
+    name = "all_possible_full_bin_tree",
+    hdrs = glob([
+        "all_possible_full_bin_tree.h",
+    ]),
+    deps = [
+        ":tree_node"
+    ],
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "all_possible_full_bin_tree_test",
+    srcs = [
+        "all_possible_full_bin_tree_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":all_possible_full_bin_tree",
+        "@com_google_googletest//:gtest_main",
+        ":tree_node",
+    ],
+)
+
+cc_library(
     name = "max_detonation",
     hdrs = glob([
         "max_detonation.h",

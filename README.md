@@ -5,6 +5,7 @@
 - [01_matrix](problem/01_matrix.h)
 - [Add Two Numbers](problem/add_two_numbers.h)
 - [all integers in range](problem/all_int_in_range.h)
+- [all possible full binary tree](problem/all_possible_full_bin_tree.h)
 - [append k integers with minimal sum](problem/append_k_integers.h)
 - [assign cookies](problem/assign_cookies.h)
 - [best time to buy and sell stocks](problem/best_time_buy_stock1.h)
