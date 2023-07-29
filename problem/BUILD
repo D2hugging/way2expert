@@ -1,3 +1,22 @@
+cc_library(
+    name = "count_sorted_vowel_strings",
+    hdrs = glob([
+        "count_sorted_vowel_strings.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "count_sorted_vowel_strings_test",
+    srcs = [
+        "count_sorted_vowel_strings_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":count_sorted_vowel_strings",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
 
 cc_library(
     name = "all_possible_full_bin_tree",

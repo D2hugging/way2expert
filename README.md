@@ -13,6 +13,7 @@
 - [container with most water](problem/max_area.h)
 - [count collisions on a road](problem/count_collisions_on_road.h)
 - [count negative in a matrix](problem/count_negative.h)
+- [count sorted vowel strings](problem/count_sorted_vowel_strings.h)
 - [divide into equal skill](problem/divide_into_equal_skill.h)
 - [find first last position in a sorted array](problem/find_first_last_position_sorted.h)
 - [find minimum element in a rotated sorted array](problem/find_minimum_rotated_sorted.h)
