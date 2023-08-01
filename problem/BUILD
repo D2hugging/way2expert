@@ -1,4 +1,44 @@
 cc_library(
+    name = "count_square_submatrices_with_all_ones",
+    hdrs = glob([
+        "count_square_submatrices_with_all_ones.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "count_square_submatrices_with_all_ones_test",
+    srcs = [
+        "count_square_submatrices_with_all_ones_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":count_square_submatrices_with_all_ones",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
+cc_library(
+    name = "max_sum_after_partition",
+    hdrs = glob([
+        "max_sum_after_partition.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "max_sum_after_partition_test",
+    srcs = [
+        "max_sum_after_partition_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":max_sum_after_partition",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
+cc_library(
     name = "count_sorted_vowel_strings",
     hdrs = glob([
         "count_sorted_vowel_strings.h",
