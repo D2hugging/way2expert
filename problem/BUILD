@@ -1,3 +1,48 @@
+
+
+cc_library(
+    name = "all_paths_from_source_to_target",
+    hdrs = glob([
+        "all_paths_from_source_to_target.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "all_paths_from_source_to_target_test",
+    srcs = [
+        "all_paths_from_source_to_target_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":all_paths_from_source_to_target",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
+cc_library(
+    name = "reverse_odd_levels_of_binary_tree",
+    hdrs = glob([
+        "reverse_odd_levels_of_binary_tree.h",
+    ]),
+    deps = [
+        ":tree_node"
+    ],
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "reverse_odd_levels_of_binary_tree_test",
+    srcs = [
+        "reverse_odd_levels_of_binary_tree_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":reverse_odd_levels_of_binary_tree",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
 cc_library(
     name = "count_square_submatrices_with_all_ones",
     hdrs = glob([
