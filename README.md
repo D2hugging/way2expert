@@ -17,6 +17,8 @@
 - [count sorted vowel strings](problem/count_sorted_vowel_strings.h)
 - [count square submatrices with all ones](problem/count_square_submatrices_with_all_ones.h)
 - [divide into equal skill](problem/divide_into_equal_skill.h)
+- [edit-distance](problem/edit-distance.h)
+- [egg-drop-with-2-eggs-and-n-floors](problem/egg-drop-with-2-eggs-and-n-floors.h)
 - [find first last position in a sorted array](problem/find_first_last_position_sorted.h)
 - [find minimum element in a rotated sorted array](problem/find_minimum_rotated_sorted.h)
 - [generate parenthesis](problem/generate_parenthesis.h)
