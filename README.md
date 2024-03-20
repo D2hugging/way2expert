@@ -76,6 +76,7 @@
 - [topmost after k moves](problem/topmost_after_k_moves.h)
 - [trapping rain water](problem/trap_water.h)
 - [triangle](problem/triangle.h)
+- [unique-paths-with-obstacle](problem/unique-paths-with-obstacle.h)
 - [valid anagram](problem/valid_anagram.h)
 - [valid sudoku](problem/valid_sudoku.h)
 - [zigzag level order](problem/zigzag_level_order.h)
