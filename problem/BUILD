@@ -1,6 +1,66 @@
 
 
 cc_library(
+    name = "regions_cut_by_slashes",
+    hdrs = glob([
+        "regions_cut_by_slashes.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "regions_cut_by_slashes_test",
+    srcs = [
+        "regions_cut_by_slashes_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":regions_cut_by_slashes",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
+cc_library(
+    name = "sort_matrix_by_diagonals",
+    hdrs = glob([
+        "sort_matrix_by_diagonals.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "sort_matrix_by_diagonals_test",
+    srcs = [
+        "sort_matrix_by_diagonals_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":sort_matrix_by_diagonals",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
+cc_library(
+    name = "min_subarray_len_distinct_sum",
+    hdrs = glob([
+        "min_subarray_len_distinct_sum.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "min_subarray_len_distinct_sum_test",
+    srcs = [
+        "min_subarray_len_distinct_sum_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":min_subarray_len_distinct_sum",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
+cc_library(
     name = "all_paths_from_source_to_target",
     hdrs = glob([
         "all_paths_from_source_to_target.h",

@@ -80,6 +80,9 @@
 - [valid anagram](problem/valid_anagram.h)
 - [valid sudoku](problem/valid_sudoku.h)
 - [zigzag level order](problem/zigzag_level_order.h)
+- [3795. Minimum Subarray Length With Distinct Sum At Least K](problem/min_subarray_len_distinct_sum.h)
+- [959. Regions Cut By Slashes](problem/regions_cut_by_slashes.h)
+- [3466. Sort Matrix by Diagonals](problem/sort_matrix_by_diagonals.h)
 
 ## how to test
 
