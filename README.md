@@ -83,6 +83,9 @@
 - [3795. Minimum Subarray Length With Distinct Sum At Least K](problem/min_subarray_len_distinct_sum.h)
 - [959. Regions Cut By Slashes](problem/regions_cut_by_slashes.h)
 - [3466. Sort Matrix by Diagonals](problem/sort_matrix_by_diagonals.h)
+- [71. Simplify Path](problem/simplify_path.h)
+- [73. Set Matrix Zeroes](problem/set_matrix_zeroes.h)
+- [79. Word Search](problem/word_search.h)
 
 ## how to test
 

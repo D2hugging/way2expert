@@ -1,4 +1,64 @@
 
+cc_library(
+    name = "word_search",
+    hdrs = glob([
+        "word_search.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "word_search_test",
+    srcs = [
+        "word_search_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":word_search",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
+cc_library(
+    name = "set_matrix_zeroes",
+    hdrs = glob([
+        "set_matrix_zeroes.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "set_matrix_zeroes_test",
+    srcs = [
+        "set_matrix_zeroes_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":set_matrix_zeroes",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
+
+cc_library(
+    name = "simplify_path",
+    hdrs = glob([
+        "simplify_path.h",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+cc_test(
+    name = "simplify_path_test",
+    srcs = [
+        "simplify_path_test.cc",
+    ],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":simplify_path",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
 
 cc_library(
     name = "regions_cut_by_slashes",
