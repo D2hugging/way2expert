@@ -43,6 +43,7 @@
 #define _EGG_DROP_WITH_2_EGGS_AND_N_FLOORS_H
 
 #include <algorithm>
+#include <climits>
 #include <vector>
 
 namespace problem {
@@ -51,7 +52,6 @@ int twoEggDrop(int n) {
   // minimum number of trials needed for
   // i eggs and j floors.
   std::vector<std::vector<int>> dp(3, std::vector<int>(n + 1, 0));
-  int res;
 
   // We need one trial for one floor and 0 trials for 0 floors
   for (int i = 1; i <= 2; i++) {
@@ -67,9 +67,6 @@ int twoEggDrop(int n) {
     for (int j = 2; j <= n; j++) {
       dp[i][j] = INT_MAX;
       for (int k = 1; k <= j; k++) {
-        // res = 1 + max(dp[i - 1][k - 1], dp[i][j - k]);
-        // if (res < dp[i][j]) dp[i][j] = res;
-
         dp[i][j] = std::min(1 + std::max(dp[i - 1][k - 1], dp[i][j - k]), dp[i][j]);
       }
     }
