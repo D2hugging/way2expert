@@ -36,8 +36,8 @@ class ReverseWords3Test : public ::testing::Test {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(ReverseWords3Test, case1) {
-// Input: s = "Let's take LeetCode contest"
-// Output: "s'teL ekat edoCteeL tsetnoc"
+  // Input: s = "Let's take LeetCode contest"
+  // Output: "s'teL ekat edoCteeL tsetnoc"
   std::string s = "Let's take LeetCode contest";
   auto output = ReverseWords3(s);
   ASSERT_EQ(output[0], 's');
@@ -49,8 +49,8 @@ TEST_F(ReverseWords3Test, case1) {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(ReverseWords3Test, case2) {
-// Input: s = "God Ding"
-// Output: "doG gniD"
+  // Input: s = "God Ding"
+  // Output: "doG gniD"
 
   std::string s = "God Ding";
   auto output = ReverseWords3(s);

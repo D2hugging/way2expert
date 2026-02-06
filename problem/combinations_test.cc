@@ -43,8 +43,7 @@ TEST_F(CombineTest, case1) {
   // ]
   int n = 4, k = 2;
   auto output = Combine(n, k);
-  std::vector<std::vector<int>> expected{{1, 2}, {1, 3}, {1, 4},
-                                         {2, 3}, {2, 4}, {3, 4}};
+  std::vector<std::vector<int>> expected{{1, 2}, {1, 3}, {1, 4}, {2, 3}, {2, 4}, {3, 4}};
   ASSERT_EQ(output.size(), 6);
   ASSERT_EQ(output[0], expected[0]);
   ASSERT_EQ(output[1], expected[1]);

@@ -5,7 +5,7 @@
 namespace problem {
 
 class SortMatrixTest : public ::testing::Test {
-protected:
+ protected:
   // You can remove any or all of the following functions if their bodies would
   // be empty.
 
@@ -58,4 +58,4 @@ TEST_F(SortMatrixTest, case3) {
   ASSERT_EQ(output, expected);
 }
 
-} // namespace problem
+}  // namespace problem

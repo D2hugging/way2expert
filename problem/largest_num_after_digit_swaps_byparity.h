@@ -1,8 +1,8 @@
 #ifndef LARGEST_NUM_AFTER_DIGIT_SWAP_H_
 #define LARGEST_NUM_AFTER_DIGIT_SWAP_H_
 
-#include <string>
 #include <algorithm>
+#include <string>
 
 namespace problem {
 

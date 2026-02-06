@@ -5,7 +5,7 @@
 namespace problem {
 
 class SetMatrixZerosTest : public ::testing::Test {
-protected:
+ protected:
   // You can remove any or all of the following functions if their bodies would
   // be empty.
 
@@ -73,4 +73,4 @@ TEST_F(SetMatrixZerosTest, case2) {
   ASSERT_EQ(data[2][3], 0);
 }
 
-} // namespace problem
+}  // namespace problem

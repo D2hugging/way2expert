@@ -52,8 +52,8 @@ TEST_F(SortJumbledNumbersTest, case1) {
 }
 
 TEST_F(SortJumbledNumbersTest, case2) {
-  std::vector<int> mapping{8,9,4,0,2,1,3,5,7,6};
-  std::vector<int> data{991,338,38};
+  std::vector<int> mapping{8, 9, 4, 0, 2, 1, 3, 5, 7, 6};
+  std::vector<int> data{991, 338, 38};
   auto output = SortJumbled(mapping, data);
   EXPECT_EQ(output[0], 338);
   EXPECT_EQ(output[1], 38);
@@ -61,8 +61,8 @@ TEST_F(SortJumbledNumbersTest, case2) {
 }
 
 TEST_F(SortJumbledNumbersTest, case3) {
-  std::vector<int> mapping{0,1,2,3,4,5,6,7,8,9};
-  std::vector<int> data{789,456,123};
+  std::vector<int> mapping{0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+  std::vector<int> data{789, 456, 123};
   auto output = SortJumbled(mapping, data);
   EXPECT_EQ(output[0], 123);
   EXPECT_EQ(output[1], 456);

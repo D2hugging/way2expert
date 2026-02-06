@@ -36,8 +36,8 @@ class IsSubsequenceTest : public ::testing::Test {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(IsSubsequenceTest, case1) {
-// Input: s = "abc", t = "ahbgdc"
-// Output: true
+  // Input: s = "abc", t = "ahbgdc"
+  // Output: true
   auto s = "abc";
   auto t = "ahbgdc";
   auto expected{true};
@@ -47,8 +47,8 @@ TEST_F(IsSubsequenceTest, case1) {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(IsSubsequenceTest, case2) {
-// Input: s = "axc", t = "ahbgdc"
-// Output: false
+  // Input: s = "axc", t = "ahbgdc"
+  // Output: false
   auto s = "axc";
   auto t = "ahbgdc";
 

@@ -36,33 +36,33 @@ class AreAlmostEqualTest : public ::testing::Test {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(AreAlmostEqualTest, case1) {
-// Input: s1 = "bank", s2 = "kanb"
-// Output: true
-// Explanation: For example, swap the first character with the last character of s2 to make "bank".
+  // Input: s1 = "bank", s2 = "kanb"
+  // Output: true
+  // Explanation: For example, swap the first character with the last character of s2 to make "bank".
   auto s1 = "bank", s2 = "kanb";
-  auto expected {true};
+  auto expected{true};
   auto output = AreAlmostEqual(s1, s2);
   ASSERT_EQ(output, expected);
 }
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(AreAlmostEqualTest, case2) {
-// Input: s1 = "attack", s2 = "defend"
-// Output: false
-// Explanation: It is impossible to make them equal with one string swap.
+  // Input: s1 = "attack", s2 = "defend"
+  // Output: false
+  // Explanation: It is impossible to make them equal with one string swap.
   auto s1 = "attack", s2 = "defend";
-  auto expected {false};
+  auto expected{false};
   auto output = AreAlmostEqual(s1, s2);
   ASSERT_EQ(output, expected);
 }
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(AreAlmostEqualTest, case3) {
-// Input: s1 = "kelb", s2 = "kelb"
-// Output: true
-// Explanation: The two strings are already equal, so no string swap operation is required.
+  // Input: s1 = "kelb", s2 = "kelb"
+  // Output: true
+  // Explanation: The two strings are already equal, so no string swap operation is required.
   auto s1 = "kelb", s2 = "kelb";
-  auto expected {true};
+  auto expected{true};
   auto output = AreAlmostEqual(s1, s2);
   ASSERT_EQ(output, expected);
 }

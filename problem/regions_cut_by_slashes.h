@@ -39,7 +39,7 @@
 
 namespace problem {
 
-int RegionsBySlashes(std::vector<std::string> &grid) {
+int RegionsBySlashes(std::vector<std::string>& grid) {
   int n = grid.size();
   int N = 3 * n;
   std::vector<std::vector<int>> ngrid(N, std::vector<int>(N, 0));
@@ -60,7 +60,7 @@ int RegionsBySlashes(std::vector<std::string> &grid) {
 
   int dx[] = {-1, 0, 1, 0};
   int dy[] = {0, 1, 0, -1};
-  auto dfs = [&](auto &&self, int x, int y) -> void {
+  auto dfs = [&](auto&& self, int x, int y) -> void {
     ngrid[x][y] = 1;
     for (int k = 0; k < 4; ++k) {
       int nx = x + dx[k];
@@ -85,6 +85,6 @@ int RegionsBySlashes(std::vector<std::string> &grid) {
   return cnt;
 }
 
-} // namespace problem
+}  // namespace problem
 
 #endif

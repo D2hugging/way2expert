@@ -38,8 +38,7 @@ class NearestExitTest : public ::testing::Test {
 TEST_F(NearestExitTest, case1) {
   //   maze = [['+','+','.','+'],['.','.','.','+'],['+','+','+','.']], entrance
   //   = [1,2]
-  std::vector<std::vector<char>> maze = {
-      {'+', '+', '.', '+'}, {'.', '.', '.', '+'}, {'+', '+', '+', '.'}};
+  std::vector<std::vector<char>> maze = {{'+', '+', '.', '+'}, {'.', '.', '.', '+'}, {'+', '+', '+', '.'}};
   std::vector<int> entrance{1, 2};
 
   auto output = NearestExit(maze, entrance);
@@ -47,8 +46,7 @@ TEST_F(NearestExitTest, case1) {
 }
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(NearestExitTest, case2) {
-  std::vector<std::vector<char>> maze = {
-      {'+', '+', '+'}, {'.', '.', '.'}, {'+', '+', '+'}};
+  std::vector<std::vector<char>> maze = {{'+', '+', '+'}, {'.', '.', '.'}, {'+', '+', '+'}};
 
   std::vector<int> entrance{1, 0};
 

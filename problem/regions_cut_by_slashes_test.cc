@@ -5,7 +5,7 @@
 namespace problem {
 
 class RegionsBySlashesTest : public ::testing::Test {
-protected:
+ protected:
   // You can remove any or all of the following functions if their bodies would
   // be empty.
 
@@ -55,4 +55,4 @@ TEST_F(RegionsBySlashesTest, case3) {
   ASSERT_EQ(output, 5);
 }
 
-} // namespace problem
+}  // namespace problem

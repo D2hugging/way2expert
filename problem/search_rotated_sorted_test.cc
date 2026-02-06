@@ -37,7 +37,7 @@ class SearchRotatedSortedTest : public ::testing::Test {
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(SearchRotatedSortedTest, case1) {
   // [4,5,6,7,0,1,2]
-  std::vector<int> data{4,5,6,7,0,1,2};
+  std::vector<int> data{4, 5, 6, 7, 0, 1, 2};
   int target = 0;
   int output = SearchRotatedSorted(data, target);
   EXPECT_EQ(output, 4);
@@ -45,7 +45,7 @@ TEST_F(SearchRotatedSortedTest, case1) {
 
 TEST_F(SearchRotatedSortedTest, case2) {
   // [4,5,6,7,0,1,2]
-  std::vector<int> data{4,5,6,7,0,1,2};
+  std::vector<int> data{4, 5, 6, 7, 0, 1, 2};
   int target = 3;
   int output = SearchRotatedSorted(data, target);
   EXPECT_EQ(output, -1);

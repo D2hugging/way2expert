@@ -38,7 +38,7 @@ class MinimalKSumTest : public ::testing::Test {
 TEST_F(MinimalKSumTest, case1) {
   //   Input: nums = [1,4,25,10,25], k = 2
   // Output: 5
-  std::vector<int> data{1,4,25,10,25};
+  std::vector<int> data{1, 4, 25, 10, 25};
   int k = 2;
   auto output = MinimalKSum(data, k);
   ASSERT_EQ(output, 5);
@@ -47,7 +47,7 @@ TEST_F(MinimalKSumTest, case1) {
 TEST_F(MinimalKSumTest, case2) {
   //   Input: nums = [5,6], k = 6
   // Output: 25
-  std::vector<int> data{5,6};
+  std::vector<int> data{5, 6};
   int k = 6;
   auto output = MinimalKSum(data, k);
   ASSERT_EQ(output, 25);

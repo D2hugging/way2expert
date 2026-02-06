@@ -70,8 +70,7 @@ int twoEggDrop(int n) {
         // res = 1 + max(dp[i - 1][k - 1], dp[i][j - k]);
         // if (res < dp[i][j]) dp[i][j] = res;
 
-        dp[i][j] =
-            std::min(1 + std::max(dp[i - 1][k - 1], dp[i][j - k]), dp[i][j]);
+        dp[i][j] = std::min(1 + std::max(dp[i - 1][k - 1], dp[i][j - k]), dp[i][j]);
       }
     }
   }

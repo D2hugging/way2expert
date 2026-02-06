@@ -8,8 +8,7 @@ namespace problem {
 // Given an array nums of distinct integers, return all the possible
 // permutations. You can return the answer in any order.
 
-void PermuteHelper(std::vector<int>& nums, int index,
-                   std::vector<std::vector<int>>& output) {
+void PermuteHelper(std::vector<int>& nums, int index, std::vector<std::vector<int>>& output) {
   if (index == nums.size() - 1) {
     output.push_back(nums);
   }

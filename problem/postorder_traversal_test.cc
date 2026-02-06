@@ -10,24 +10,24 @@ class PostorderTraversalTest : public ::testing::Test {
   // be empty.
 
   PostorderTraversalTest() {
-     // You can do set-up work for each test here.
+    // You can do set-up work for each test here.
   }
 
   ~PostorderTraversalTest() override {
-     // You can do clean-up work that doesn't throw exceptions here.
+    // You can do clean-up work that doesn't throw exceptions here.
   }
 
   // If the constructor and destructor are not enough for setting up
   // and cleaning up each test, you can define the following methods:
 
   void SetUp() override {
-     // Code here will be called immediately after the constructor (right
-     // before each test).
+    // Code here will be called immediately after the constructor (right
+    // before each test).
   }
 
   void TearDown() override {
-     // Code here will be called immediately after each test (right
-     // before the destructor).
+    // Code here will be called immediately after each test (right
+    // before the destructor).
   }
 
   // Class members declared here can be used by all tests in the test suite
@@ -36,8 +36,8 @@ class PostorderTraversalTest : public ::testing::Test {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(PostorderTraversalTest, case1) {
-// Input: root = [1,null,2,3]
-// Output: [3,2,1]
+  // Input: root = [1,null,2,3]
+  // Output: [3,2,1]
   auto node = new TreeNode(1);
   node->right = new TreeNode(2);
   node->right->left = new TreeNode(3);
@@ -50,8 +50,8 @@ TEST_F(PostorderTraversalTest, case1) {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(PostorderTraversalTest, case2) {
-// Input: root = []
-// Output: []
+  // Input: root = []
+  // Output: []
   auto node = nullptr;
   auto output = PostorderTraversal(node);
   EXPECT_EQ(output.size(), 0);
@@ -59,8 +59,8 @@ TEST_F(PostorderTraversalTest, case2) {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(PostorderTraversalTest, case3) {
-// Input: root = [1]
-// Output: [1]
+  // Input: root = [1]
+  // Output: [1]
   auto node = new TreeNode(1);
   auto output = PostorderTraversal(node);
   EXPECT_EQ(output.size(), 1);

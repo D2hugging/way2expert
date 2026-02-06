@@ -38,8 +38,7 @@ class SearchMatrix1Test : public ::testing::Test {
 TEST_F(SearchMatrix1Test, case1) {
   // Input: matrix = {{1,3,5,7},{10,11,16,20},{23,30,34,60}}, target = 3
   // Output: true
-  std::vector<std::vector<int>> data{
-      {1, 3, 5, 7}, {10, 11, 16, 20}, {23, 30, 34, 60}};
+  std::vector<std::vector<int>> data{{1, 3, 5, 7}, {10, 11, 16, 20}, {23, 30, 34, 60}};
   int target = 3;
   auto output = SearchMatrix1(data, target);
   ASSERT_EQ(output, true);
@@ -50,8 +49,7 @@ TEST_F(SearchMatrix1Test, case2) {
   // Input: matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13
   // Output: false
 
-  std::vector<std::vector<int>> data{
-      {1, 3, 5, 7}, {10, 11, 16, 20}, {23, 30, 34, 60}};
+  std::vector<std::vector<int>> data{{1, 3, 5, 7}, {10, 11, 16, 20}, {23, 30, 34, 60}};
   int target = 13;
   auto output = SearchMatrix1(data, target);
   ASSERT_EQ(output, false);

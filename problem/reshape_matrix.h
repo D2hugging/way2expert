@@ -17,8 +17,7 @@ namespace problem {
 
 // If the reshape operation with given parameters is possible and legal, output
 // the new reshaped matrix; Otherwise, output the original matrix.
-std::vector<std::vector<int>> MatrixReshape(std::vector<std::vector<int>>& mat,
-                                            int r, int c) {
+std::vector<std::vector<int>> MatrixReshape(std::vector<std::vector<int>>& mat, int r, int c) {
   int m = mat.size();
   int n = mat[0].size();
   int total = m * n;

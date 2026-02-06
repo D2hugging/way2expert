@@ -36,8 +36,8 @@ class LetterCasePermutationTest : public ::testing::Test {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(LetterCasePermutationTest, case1) {
-// Input: s = "a1b2"
-// Output: ["a1b2","a1B2","A1b2","A1B2"]
+  // Input: s = "a1b2"
+  // Output: ["a1b2","a1B2","A1b2","A1B2"]
 
   auto s = "a1b2";
   auto output = LetterCasePermutation(s);
@@ -51,9 +51,9 @@ TEST_F(LetterCasePermutationTest, case1) {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(LetterCasePermutationTest, case2) {
-// Input: s = "3z4"
-// Output: ["3z4","3Z4"]
-auto s = "3z4";
+  // Input: s = "3z4"
+  // Output: ["3z4","3Z4"]
+  auto s = "3z4";
   std::vector<std::string> expected{"3z4", "3Z4"};
 
   auto output = LetterCasePermutation(s);

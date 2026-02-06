@@ -37,7 +37,6 @@ class MyQueueTest : public ::testing::Test {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(MyQueueTest, case_push) {
-
   q_.push(1);
   ASSERT_TRUE(!q_.empty());
 }

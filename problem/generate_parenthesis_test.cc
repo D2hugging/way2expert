@@ -45,11 +45,6 @@ TEST_F(GenerateParenthesisTest, case1) {
   EXPECT_EQ(output[2], "(())()");
   EXPECT_EQ(output[3], "()(())");
   EXPECT_EQ(output[4], "()()()");
-
-
-
-
-
 }
 
 }  // namespace problem

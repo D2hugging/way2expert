@@ -1,8 +1,9 @@
 #ifndef LEVEL_ORDER_H_
 #define LEVEL_ORDER_H_
 
-#include <vector>
 #include <queue>
+#include <vector>
+
 #include "problem/tree_node.h"
 
 namespace problem {

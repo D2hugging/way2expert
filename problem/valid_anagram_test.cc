@@ -36,8 +36,8 @@ class IsAnagramTest : public ::testing::Test {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(IsAnagramTest, case1) {
-// Input: s = "anagram", t = "nagaram"
-// Output: true
+  // Input: s = "anagram", t = "nagaram"
+  // Output: true
   auto s = "anagram";
   auto t = "nagaram";
   auto output = IsAnagram(s, t);
@@ -46,11 +46,11 @@ TEST_F(IsAnagramTest, case1) {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(IsAnagramTest, case2) {
-// Input: s = "rat", t = "car"
-// Output: false
+  // Input: s = "rat", t = "car"
+  // Output: false
   auto s = "rat";
   auto t = "car";
-  
+
   auto output = IsAnagram(s, t);
   ASSERT_EQ(output, false);
 }

@@ -62,7 +62,7 @@
 
 namespace problem {
 
-std::vector<std::vector<int>> SortMatrix(std::vector<std::vector<int>> &grid) {
+std::vector<std::vector<int>> SortMatrix(std::vector<std::vector<int>>& grid) {
   std::unordered_map<int, std::vector<int>> di;
   for (int i = 0; i < grid.size(); ++i) {
     for (int j = 0; j < grid[0].size(); ++j) {
@@ -72,7 +72,7 @@ std::vector<std::vector<int>> SortMatrix(std::vector<std::vector<int>> &grid) {
   }
 
   // sort
-  for (auto &[idx, vals] : di) {
+  for (auto& [idx, vals] : di) {
     if (idx >= 0) {
       sort(vals.begin(), vals.end());
     } else {
@@ -91,6 +91,6 @@ std::vector<std::vector<int>> SortMatrix(std::vector<std::vector<int>> &grid) {
   return grid;
 }
 
-} // namespace problem
+}  // namespace problem
 
 #endif

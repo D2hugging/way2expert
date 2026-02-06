@@ -1,12 +1,13 @@
 #include "problem/simplify_path.h"
 
-#include "gtest/gtest.h"
 #include <string>
+
+#include "gtest/gtest.h"
 
 namespace problem {
 
 class SimplifyPathTest : public ::testing::Test {
-protected:
+ protected:
   // You can remove any or all of the following functions if their bodies would
   // be empty.
 
@@ -73,4 +74,4 @@ TEST_F(SimplifyPathTest, case6) {
   ASSERT_EQ(output, "/home/user/Pictures");
 }
 
-} // namespace problem
+}  // namespace problem

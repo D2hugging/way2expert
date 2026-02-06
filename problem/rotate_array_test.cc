@@ -36,9 +36,9 @@ class RotateTest : public ::testing::Test {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(RotateTest, case1) {
-// Input: nums = [1,2,3,4,5,6,7], k = 3
-// Output: [5,6,7,1,2,3,4]
-  std::vector<int> data{1,2,3,4,5,6,7};
+  // Input: nums = [1,2,3,4,5,6,7], k = 3
+  // Output: [5,6,7,1,2,3,4]
+  std::vector<int> data{1, 2, 3, 4, 5, 6, 7};
   int k = 3;
   Rotate(data, k);
   ASSERT_EQ(data[0], 5);
@@ -47,10 +47,10 @@ TEST_F(RotateTest, case1) {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(RotateTest, case2) {
-// Input: nums = [-1,-100,3,99], k = 2
-// Output: [3,99,-1,-100]
+  // Input: nums = [-1,-100,3,99], k = 2
+  // Output: [3,99,-1,-100]
 
-  std::vector<int> data{-1,-100,3,99};
+  std::vector<int> data{-1, -100, 3, 99};
   int k = 2;
   Rotate(data, k);
   ASSERT_EQ(data[0], 3);

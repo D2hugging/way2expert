@@ -40,18 +40,16 @@
 #include <vector>
 
 namespace problem {
-bool exist(std::vector<std::vector<char>> &board, std::string word) {
+bool exist(std::vector<std::vector<char>>& board, std::string word) {
   int m = board.size();
   int n = board[0].size();
 
   int dx[4] = {-1, 0, 1, 0};
   int dy[4] = {0, 1, 0, -1};
 
-  auto dfs = [&](auto &&self, int i, int j, int idx) -> bool {
-    if (board[i][j] != word[idx])
-      return false;
-    if (idx == word.size() - 1)
-      return true;
+  auto dfs = [&](auto&& self, int i, int j, int idx) -> bool {
+    if (board[i][j] != word[idx]) return false;
+    if (idx == word.size() - 1) return true;
 
     char tmp = board[i][j];
     board[i][j] = '#';
@@ -81,6 +79,6 @@ bool exist(std::vector<std::vector<char>> &board, std::string word) {
   return false;
 }
 
-} // namespace problem
+}  // namespace problem
 
 #endif

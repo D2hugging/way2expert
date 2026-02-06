@@ -36,26 +36,26 @@ class HouseRobTest : public ::testing::Test {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(HouseRobTest, case1) {
-// Input: nums = [1,2,3,1]
-// Output: 4
-// Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).
-// Total amount you can rob = 1 + 3 = 4.
+  // Input: nums = [1,2,3,1]
+  // Output: 4
+  // Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).
+  // Total amount you can rob = 1 + 3 = 4.
 
-  std::vector<int> nums{1,2,3,1};
-  auto expected {4};
+  std::vector<int> nums{1, 2, 3, 1};
+  auto expected{4};
   auto output = HouseRob(nums);
   ASSERT_EQ(output, expected);
 }
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(HouseRobTest, case2) {
-// Input: nums = [2,7,9,3,1]
-// Output: 12
-// Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1).
-// Total amount you can rob = 2 + 9 + 1 = 12.
-  std::vector<int> nums{2,7,9,3,1};
+  // Input: nums = [2,7,9,3,1]
+  // Output: 12
+  // Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1).
+  // Total amount you can rob = 2 + 9 + 1 = 12.
+  std::vector<int> nums{2, 7, 9, 3, 1};
 
-  auto expected {12};
+  auto expected{12};
   auto output = HouseRob(nums);
   ASSERT_EQ(output, expected);
 }

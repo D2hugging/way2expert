@@ -76,8 +76,7 @@ TEST_F(MaximumDetonationTest, case3) {
   // - Bomb 2 detonates bomb 3. The blue circle denotes the range of bomb 2.
   // - Bomb 3 detonates bomb 4. The green circle denotes the range of bomb 3.
   // Thus all 5 bombs are detonated.
-  std::vector<std::vector<int>> bombs{
-      {1, 2, 3}, {2, 3, 1}, {3, 4, 2}, {4, 5, 3}, {5, 6, 4}};
+  std::vector<std::vector<int>> bombs{{1, 2, 3}, {2, 3, 1}, {3, 4, 2}, {4, 5, 3}, {5, 6, 4}};
   int excepted = 5;
 
   auto output = MaximumDetonation(bombs);
