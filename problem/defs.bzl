@@ -17,5 +17,5 @@ def leetcode_problem(name, deps = []):
     native.cc_test(
         name = name + "_test",
         srcs = [name + "_test.cc"],
-        deps = [":" + name, "@com_google_googletest//:gtest_main"],
+        deps = [":" + name, "@googletest//:gtest_main"],
     )
