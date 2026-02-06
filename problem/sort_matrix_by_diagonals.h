@@ -56,6 +56,7 @@
 #ifndef SORT_MATRIX_BY_DIAGONALS_H_
 #define SORT_MATRIX_BY_DIAGONALS_H_
 
+#include <algorithm>
 #include <climits>
 #include <unordered_map>
 #include <vector>
@@ -74,9 +75,9 @@ std::vector<std::vector<int>> SortMatrix(std::vector<std::vector<int>>& grid) {
   // sort
   for (auto& [idx, vals] : di) {
     if (idx >= 0) {
-      sort(vals.begin(), vals.end());
+      std::sort(vals.begin(), vals.end());
     } else {
-      sort(vals.begin(), vals.end(), std::greater<int>());
+      std::sort(vals.begin(), vals.end(), std::greater<int>());
     }
   }
 
