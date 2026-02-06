@@ -36,3 +36,5 @@ bazel-*
 .vscode/
 
 .DS_Store
+
+MODULE.bazel.lock

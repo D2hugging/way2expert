@@ -35,8 +35,6 @@
 #ifndef _UNIQUE_PATH_WITH_OBSTACLE_H
 #define _UNIQUE_PATH_WITH_OBSTACLE_H
 
-#include <algorithm>
-#include <string>
 #include <vector>
 
 namespace problem {
@@ -67,3 +65,5 @@ int uniquePathsWithObstacles(std::vector<std::vector<int>>& obstacleGrid) {
 }
 
 }  // namespace problem
+
+#endif

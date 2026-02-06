@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+    branches: [master, main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Bazel
+        uses: bazelbuild/setup-bazelisk@v3
+
+      - name: Build
+        run: bazel build //problem/...
+
+      - name: Test
+        run: bazel test //problem/...
+
+  format-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install clang-format
+        run: sudo apt-get install -y clang-format
+
+      - name: Check formatting
+        run: |
+          find problem -name '*.h' -o -name '*.cc' | xargs clang-format --dry-run -Werror
