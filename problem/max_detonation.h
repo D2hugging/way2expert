@@ -26,8 +26,7 @@ namespace {
 // bombs[i].length == 3
 // 1 <= xi, yi, ri <= 105
 
-int DFSMaximumDetonation(std::vector<int> adj[], int node,
-                         std::vector<bool>& visited) {
+int DFSMaximumDetonation(std::vector<int> adj[], int node, std::vector<bool>& visited) {
   visited[node] = true;
   int cnt = 1;
   for (auto n : adj[node]) {

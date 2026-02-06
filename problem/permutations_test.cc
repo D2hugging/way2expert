@@ -41,8 +41,7 @@ TEST_F(PermuteTest, case1) {
 
   std::vector<int> nums{1, 2, 3};
   auto output = Permute(nums);
-  std::vector<std::vector<int>> expected{{1, 2, 3}, {1, 3, 2}, {2, 1, 3},
-                                         {2, 3, 1}, {3, 2, 1}, {3, 1, 2}};
+  std::vector<std::vector<int>> expected{{1, 2, 3}, {1, 3, 2}, {2, 1, 3}, {2, 3, 1}, {3, 2, 1}, {3, 1, 2}};
   ASSERT_EQ(output.size(), 6);
   ASSERT_EQ(output[0], expected[0]);
   ASSERT_EQ(output[1], expected[1]);

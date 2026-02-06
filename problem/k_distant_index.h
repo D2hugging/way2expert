@@ -1,6 +1,7 @@
 #ifndef K_DISTANT_INDEX_H_
 #define K_DISTANT_INDEX_H_
 
+#include <cmath>
 #include <vector>
 
 namespace problem {
@@ -41,7 +42,7 @@ std::vector<int> FindKDistantIndices(std::vector<int>& nums, int key, int k) {
   std::vector<int> ans;
   for (auto i = 0; i < nums.size(); ++i) {
     for (auto j : js) {
-      if (abs(i - j) <= k && nums[j] == key) {
+      if (std::abs(i - j) <= k && nums[j] == key) {
         ans.push_back(i);
       }
     }

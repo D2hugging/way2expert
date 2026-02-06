@@ -36,8 +36,8 @@ class GeneratePascalTriangleTest : public ::testing::Test {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(GeneratePascalTriangleTest, case1) {
-// Input: numRows = 5
-// Output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
+  // Input: numRows = 5
+  // Output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
   int num_rows = 5;
   auto output = GeneratePascalTriangle(num_rows);
   ASSERT_EQ(output[0][0], 1);
@@ -54,8 +54,8 @@ TEST_F(GeneratePascalTriangleTest, case1) {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(GeneratePascalTriangleTest, case2) {
-// Input: numRows = 1
-// Output: [[1]]
+  // Input: numRows = 1
+  // Output: [[1]]
   int num_rows = 1;
   auto output = GeneratePascalTriangle(num_rows);
   ASSERT_EQ(output[0][0], 1);

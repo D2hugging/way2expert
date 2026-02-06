@@ -1,8 +1,8 @@
 #ifndef SUBSETS_H_
 #define SUBSETS_H_
 
-#include <vector>
 #include <cmath>
+#include <vector>
 
 namespace problem {
 
@@ -10,8 +10,7 @@ namespace problem {
 // The solution set must not contain duplicate subsets. Return the solution in any order.
 
 // backtracking
-void subsets(const std::vector<int>& nums, int begin, std::vector<int>& sub,
-             std::vector<std::vector<int>>& subs) {
+void subsets(const std::vector<int>& nums, int begin, std::vector<int>& sub, std::vector<std::vector<int>>& subs) {
   subs.push_back(sub);
   for (auto i = begin; i < nums.size(); ++i) {
     sub.push_back(nums[i]);
@@ -21,8 +20,7 @@ void subsets(const std::vector<int>& nums, int begin, std::vector<int>& sub,
   return;
 }
 
-std::vector<std::vector<int>> SubsetsBacktracking(
-    const std::vector<int>& nums) {
+std::vector<std::vector<int>> SubsetsBacktracking(const std::vector<int>& nums) {
   std::vector<int> sub;
   std::vector<std::vector<int>> subs;
   subsets(nums, 0, sub, subs);

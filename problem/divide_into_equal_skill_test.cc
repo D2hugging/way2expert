@@ -36,14 +36,14 @@ class DividePlayersTest : public ::testing::Test {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(DividePlayersTest, case1) {
-// Input: skill = [3,2,5,1,3,4]
-// Output: 22
-// Explanation: 
-// Divide the players into the following teams: (1, 5), (2, 4), (3, 3), where each team has a total skill of 6.
-// The sum of the chemistry of all the teams is: 1 * 5 + 2 * 4 + 3 * 3 = 5 + 8 + 9 = 22.
-  std::vector<int> data = {3,2,5,1,3,4};
+  // Input: skill = [3,2,5,1,3,4]
+  // Output: 22
+  // Explanation:
+  // Divide the players into the following teams: (1, 5), (2, 4), (3, 3), where each team has a total skill of 6.
+  // The sum of the chemistry of all the teams is: 1 * 5 + 2 * 4 + 3 * 3 = 5 + 8 + 9 = 22.
+  std::vector<int> data = {3, 2, 5, 1, 3, 4};
   auto output = DividePlayers(data);
-  int excepted {22};
+  int excepted{22};
   ASSERT_EQ(output, excepted);
 }
 

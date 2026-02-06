@@ -54,7 +54,7 @@
 
 namespace problem {
 
-int MinLength(std::vector<int> &nums, int k) {
+int MinLength(std::vector<int>& nums, int k) {
   int n = nums.size();
   int min_len = INT_MAX;
   int left = 0;
@@ -82,6 +82,6 @@ int MinLength(std::vector<int> &nums, int k) {
   return min_len == INT_MAX ? -1 : min_len;
 }
 
-} // namespace problem
+}  // namespace problem
 
 #endif

@@ -56,13 +56,14 @@
 #ifndef SORT_MATRIX_BY_DIAGONALS_H_
 #define SORT_MATRIX_BY_DIAGONALS_H_
 
+#include <algorithm>
 #include <climits>
 #include <unordered_map>
 #include <vector>
 
 namespace problem {
 
-std::vector<std::vector<int>> SortMatrix(std::vector<std::vector<int>> &grid) {
+std::vector<std::vector<int>> SortMatrix(std::vector<std::vector<int>>& grid) {
   std::unordered_map<int, std::vector<int>> di;
   for (int i = 0; i < grid.size(); ++i) {
     for (int j = 0; j < grid[0].size(); ++j) {
@@ -72,11 +73,11 @@ std::vector<std::vector<int>> SortMatrix(std::vector<std::vector<int>> &grid) {
   }
 
   // sort
-  for (auto &[idx, vals] : di) {
+  for (auto& [idx, vals] : di) {
     if (idx >= 0) {
-      sort(vals.begin(), vals.end());
+      std::sort(vals.begin(), vals.end());
     } else {
-      sort(vals.begin(), vals.end(), std::greater<int>());
+      std::sort(vals.begin(), vals.end(), std::greater<int>());
     }
   }
 
@@ -91,6 +92,6 @@ std::vector<std::vector<int>> SortMatrix(std::vector<std::vector<int>> &grid) {
   return grid;
 }
 
-} // namespace problem
+}  // namespace problem
 
 #endif

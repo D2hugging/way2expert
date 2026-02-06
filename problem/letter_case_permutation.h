@@ -6,8 +6,7 @@
 
 namespace problem {
 
-void LetterCasePermutationHelper(std::string s, int index, std::string current,
-                                 std::vector<std::string>& output) {
+void LetterCasePermutationHelper(std::string s, int index, std::string current, std::vector<std::string>& output) {
   if (index == s.size()) {
     output.push_back(current);
     return;

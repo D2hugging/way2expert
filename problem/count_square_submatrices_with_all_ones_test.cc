@@ -47,8 +47,7 @@ TEST_F(SolutionCountSquaresTest, case1) {
   // There are 4 squares of side 2.
   // There is  1 square of side 3.
   // Total number of squares = 10 + 4 + 1 = 15.
-  std::vector<std::vector<int>> matrix{
-      {0, 1, 1, 1}, {1, 1, 1, 1}, {0, 1, 1, 1}};
+  std::vector<std::vector<int>> matrix{{0, 1, 1, 1}, {1, 1, 1, 1}, {0, 1, 1, 1}};
 
   SolutionCountSquares sln;
 

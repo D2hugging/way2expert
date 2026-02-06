@@ -1,8 +1,8 @@
 #ifndef LONGEST_HARMONIOUS_SUBSEQUENCE_H_
 #define LONGEST_HARMONIOUS_SUBSEQUENCE_H_
 
-#include <vector>
 #include <unordered_map>
+#include <vector>
 
 namespace problem {
 

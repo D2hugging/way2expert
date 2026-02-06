@@ -20,16 +20,11 @@ namespace problem {
 // Return the number of steps in the shortest path from the entrance to the
 // nearest exit, or -1 if no such path exists.
 
-bool isBorder(int m, int n, int i, int j) {
-  return i == 0 || i == m - 1 || j == 0 || j == n - 1;
-}
+bool isBorder(int m, int n, int i, int j) { return i == 0 || i == m - 1 || j == 0 || j == n - 1; }
 
-bool isValid(int m, int n, int i, int j) {
-  return i >= 0 && i < m && j >= 0 && j < n;
-}
+bool isValid(int m, int n, int i, int j) { return i >= 0 && i < m && j >= 0 && j < n; }
 
-int NearestExit(std::vector<std::vector<char>>& maze,
-                std::vector<int>& entrance) {
+int NearestExit(std::vector<std::vector<char>>& maze, std::vector<int>& entrance) {
   int rows[4]{0, 0, 1, -1};
   int cols[4]{1, -1, 0, 0};
   int m = maze.size();

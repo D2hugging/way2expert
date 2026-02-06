@@ -35,8 +35,7 @@ std::vector<std::vector<int>> UpdateMatrix(std::vector<std::vector<int>>& mat) {
       for (auto i = 0; i < 4; ++i) {
         auto x = p.first + dir[i];
         auto y = p.second + dir[i + 1];
-        if (x >= 0 && x < m && y >= 0 && y < n &&
-            grid[x][y] > 1 + grid[p.first][p.second]) {
+        if (x >= 0 && x < m && y >= 0 && y < n && grid[x][y] > 1 + grid[p.first][p.second]) {
           grid[x][y] = 1 + grid[p.first][p.second];
           q.push({x, y});
         }

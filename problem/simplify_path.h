@@ -103,16 +103,15 @@ std::string simplifyPath(std::string path) {
     }
   }
 
-  if (stk.empty())
-    return "/";
+  if (stk.empty()) return "/";
 
   std::string res;
-  for (auto &tmp : stk) {
+  for (auto& tmp : stk) {
     res += '/' + tmp;
   }
   return res;
 }
 
-} // namespace problem
+}  // namespace problem
 
 #endif

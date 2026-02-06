@@ -28,8 +28,7 @@ struct cmp {
   }
 };
 
-std::vector<int> SortJumbled(std::vector<int>& mapping,
-                             std::vector<int>& nums) {
+std::vector<int> SortJumbled(std::vector<int>& mapping, std::vector<int>& nums) {
   std::vector<std::pair<int, int>> tmp;
   std::stack<int> st;
   for (int i = 0; i < nums.size(); ++i) {

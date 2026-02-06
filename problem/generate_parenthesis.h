@@ -9,8 +9,7 @@ namespace problem {
 // Given n pairs of parentheses, write a function to generate all combinations
 // of well-formed parentheses.
 
-void GenerateParenthesis(int open, int close, std::string s,
-                         std::vector<std::string>& output) {
+void GenerateParenthesis(int open, int close, std::string s, std::vector<std::string>& output) {
   if (open == 0 && close == 0) {
     output.push_back(s);
   }

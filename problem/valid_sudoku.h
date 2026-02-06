@@ -25,8 +25,7 @@ bool IsValidSudoku(std::vector<std::vector<char>>& board) {
       if (board[i][j] == '.') continue;
       int curr = board[i][j];
 
-      if (rows[i].count(curr) || cols[j].count(curr) ||
-          blocks[(i / 3) * 3 + j / 3].count(curr)) {
+      if (rows[i].count(curr) || cols[j].count(curr) || blocks[(i / 3) * 3 + j / 3].count(curr)) {
         return false;
       }
 

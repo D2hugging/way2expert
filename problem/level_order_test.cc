@@ -10,24 +10,24 @@ class LevelOrderTest : public ::testing::Test {
   // be empty.
 
   LevelOrderTest() {
-     // You can do set-up work for each test here.
+    // You can do set-up work for each test here.
   }
 
   ~LevelOrderTest() override {
-     // You can do clean-up work that doesn't throw exceptions here.
+    // You can do clean-up work that doesn't throw exceptions here.
   }
 
   // If the constructor and destructor are not enough for setting up
   // and cleaning up each test, you can define the following methods:
 
   void SetUp() override {
-     // Code here will be called immediately after the constructor (right
-     // before each test).
+    // Code here will be called immediately after the constructor (right
+    // before each test).
   }
 
   void TearDown() override {
-     // Code here will be called immediately after each test (right
-     // before the destructor).
+    // Code here will be called immediately after each test (right
+    // before the destructor).
   }
 
   // Class members declared here can be used by all tests in the test suite
@@ -36,7 +36,7 @@ class LevelOrderTest : public ::testing::Test {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(LevelOrderTest, case1) {
-   // [3,9,20,null,null,15,7]
+  // [3,9,20,null,null,15,7]
   auto node = new TreeNode(3);
   node->left = new TreeNode(9);
   node->right = new TreeNode(20);
@@ -52,7 +52,6 @@ TEST_F(LevelOrderTest, case1) {
   EXPECT_EQ(output[1][1], 20);
   EXPECT_EQ(output[2][0], 15);
   EXPECT_EQ(output[2][1], 7);
-
 }
 
 }  // namespace problem

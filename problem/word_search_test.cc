@@ -5,7 +5,7 @@
 namespace problem {
 
 class WordSearchTest : public ::testing::Test {
-protected:
+ protected:
   // You can remove any or all of the following functions if their bodies would
   // be empty.
 
@@ -39,8 +39,7 @@ TEST_F(WordSearchTest, case1) {
   // Input: mat = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word
   // = "ABCCED" Output: true
 
-  std::vector<std::vector<char>> data{
-      {'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}};
+  std::vector<std::vector<char>> data{{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}};
   std::string word = "ABCCED";
   auto output = exist(data, word);
   ASSERT_EQ(output, true);
@@ -51,8 +50,7 @@ TEST_F(WordSearchTest, case2) {
   // Input: mat = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word
   // = "SEE" Output: true
 
-  std::vector<std::vector<char>> data{
-      {'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}};
+  std::vector<std::vector<char>> data{{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}};
   std::string word = "SEE";
   auto output = exist(data, word);
   ASSERT_EQ(output, true);
@@ -62,11 +60,10 @@ TEST_F(WordSearchTest, case3) {
   // Input: mat = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word
   // = "ABCB" Output: false
 
-  std::vector<std::vector<char>> data{
-      {'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}};
+  std::vector<std::vector<char>> data{{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}};
   std::string word = "ABCB";
   auto output = exist(data, word);
   ASSERT_EQ(output, false);
 }
 
-} // namespace problem
+}  // namespace problem

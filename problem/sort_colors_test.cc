@@ -10,24 +10,24 @@ class SortColorsTest : public ::testing::Test {
   // be empty.
 
   SortColorsTest() {
-     // You can do set-up work for each test here.
+    // You can do set-up work for each test here.
   }
 
   ~SortColorsTest() override {
-     // You can do clean-up work that doesn't throw exceptions here.
+    // You can do clean-up work that doesn't throw exceptions here.
   }
 
   // If the constructor and destructor are not enough for setting up
   // and cleaning up each test, you can define the following methods:
 
   void SetUp() override {
-     // Code here will be called immediately after the constructor (right
-     // before each test).
+    // Code here will be called immediately after the constructor (right
+    // before each test).
   }
 
   void TearDown() override {
-     // Code here will be called immediately after each test (right
-     // before the destructor).
+    // Code here will be called immediately after each test (right
+    // before the destructor).
   }
 
   // Class members declared here can be used by all tests in the test suite
@@ -36,7 +36,7 @@ class SortColorsTest : public ::testing::Test {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(SortColorsTest, case1) {
-  std::vector<int> arr{2,0,2,1,1,0};
+  std::vector<int> arr{2, 0, 2, 1, 1, 0};
   problem::sortColors(arr);
   EXPECT_EQ(arr[0], 0);
   EXPECT_EQ(arr[1], 0);

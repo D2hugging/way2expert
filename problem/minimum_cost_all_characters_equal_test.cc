@@ -48,4 +48,4 @@ TEST_F(MinimumCostTest, case2) {
   EXPECT_EQ(output, 9);
 }
 
-}
+}  // namespace problem

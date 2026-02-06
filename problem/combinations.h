@@ -10,8 +10,7 @@ namespace problem {
 
 // You may return the answer in any order.
 
-void CombineHelper(int n, int k, int index, std::vector<int> current,
-                   std::vector<std::vector<int>>& output) {
+void CombineHelper(int n, int k, int index, std::vector<int> current, std::vector<std::vector<int>>& output) {
   if (current.size() == k) {
     output.push_back(current);
     return;

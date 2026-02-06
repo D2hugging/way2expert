@@ -1,5 +1,16 @@
 # way2expert
 
+LeetCode solutions in C++ with unit tests.
+
+![CI](https://github.com/D2hugging/way2expert/actions/workflows/ci.yml/badge.svg)
+
+## Prerequisites
+
+- Bazel 7.4+
+- clang-format (for formatting)
+
+> Note: 7.4 is Just a recent stable version I chose.
+
 ## Problem List
 
 - [2. Add Two Numbers](problem/add_two_numbers.h)
@@ -97,4 +108,18 @@
 
 ```bash
 bazel test //problem/...
+```
+
+## How to Format
+
+Format all files
+
+```bash
+find problem -name '*.h' -o -name '*.cc' | xargs clang-format -i
+```
+
+Format single file
+
+```bash
+clang-format -i problem/edit_distance.h
 ```

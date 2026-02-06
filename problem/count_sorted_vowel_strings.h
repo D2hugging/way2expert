@@ -12,8 +12,7 @@ namespace problem {
 // as or comes before s[i+1] in the alphabet.
 
 class CountSortedVowelString {
-  void backtracking(const std::vector<char>& vowels, std::vector<char>& temp,
-                    int n, int idx, int& output) {
+  void backtracking(const std::vector<char>& vowels, std::vector<char>& temp, int n, int idx, int& output) {
     if (temp.size() == n) {
       ++output;
       return;

@@ -36,10 +36,10 @@ class CountNegativesTest : public ::testing::Test {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(CountNegativesTest, case1) {
-// Input: grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
-// Output: 8
-// Explanation: There are 8 negatives number in the matrix.
-  std::vector<std::vector<int>> data{{4,3,2,-1},{3,2,1,-1},{1,1,-1,-2},{-1,-1,-2,-3}};
+  // Input: grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
+  // Output: 8
+  // Explanation: There are 8 negatives number in the matrix.
+  std::vector<std::vector<int>> data{{4, 3, 2, -1}, {3, 2, 1, -1}, {1, 1, -1, -2}, {-1, -1, -2, -3}};
   auto output = CountNegatives(data);
   int excepted{8};
   ASSERT_EQ(output, excepted);
@@ -47,9 +47,9 @@ TEST_F(CountNegativesTest, case1) {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(CountNegativesTest, case2) {
-//   Input: grid = [[3,2],[1,0]]
-// Output: 0
-  std::vector<std::vector<int>> data{{3,2},{1,0}};
+  //   Input: grid = [[3,2],[1,0]]
+  // Output: 0
+  std::vector<std::vector<int>> data{{3, 2}, {1, 0}};
   int excepted{0};
 
   auto output = CountNegatives(data);

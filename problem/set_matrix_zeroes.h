@@ -35,7 +35,7 @@
 
 namespace problem {
 
-void setZeroes(std::vector<std::vector<int>> &matrix) {
+void setZeroes(std::vector<std::vector<int>>& matrix) {
   int m = matrix.size();
   int n = matrix[0].size();
 
@@ -82,6 +82,6 @@ void setZeroes(std::vector<std::vector<int>> &matrix) {
   }
 }
 
-} // namespace problem
+}  // namespace problem
 
 #endif

@@ -49,13 +49,13 @@ TEST_F(SubsetsTest, case1) {
   std::vector<int> data{1, 2, 3};
   // {{},{1},{1,2},{1,2,3},{1,3},{2},{2,3},{3}}
   auto output1 = SubsetsBacktracking(data);
-//   print_arrays(output1);
+  //   print_arrays(output1);
 
   EXPECT_EQ(output1.size(), 8);
   EXPECT_EQ(output1[0].size(), 0);
   // {{},{1},{2},{1,2},{3},{1,3},{2,3},{1,2,3}}
   auto output2 = Subsets(data);
-//   print_arrays(output2);
+  //   print_arrays(output2);
   EXPECT_EQ(output2.size(), 8);
   EXPECT_EQ(output2[0].size(), 0);
   EXPECT_EQ(output2[7].size(), 3);

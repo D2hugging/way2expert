@@ -1,9 +1,9 @@
 #ifndef NEXT_GREATER_ELEMENT1_H_
 #define NEXT_GREATER_ELEMENT1_H_
 
-#include <vector>
 #include <stack>
 #include <unordered_map>
+#include <vector>
 
 namespace problem {
 

@@ -22,8 +22,8 @@ namespace problem {
 
 class SolutionAllPathsSourceTarget {
  public:
-  void dfs(const std::vector<std::vector<int>>& graph, int cur,
-           std::vector<int>& path, std::vector<std::vector<int>>& output) {
+  void dfs(const std::vector<std::vector<int>>& graph, int cur, std::vector<int>& path,
+           std::vector<std::vector<int>>& output) {
     path.push_back(cur);
     if (cur == graph.size() - 1) {
       output.push_back(path);
@@ -35,8 +35,7 @@ class SolutionAllPathsSourceTarget {
     path.pop_back();
   }
 
-  std::vector<std::vector<int>> allPathsSourceTarget(
-      std::vector<std::vector<int>>& graph) {
+  std::vector<std::vector<int>> allPathsSourceTarget(std::vector<std::vector<int>>& graph) {
     std::vector<std::vector<int>> output;
     std::vector<int> path;
 

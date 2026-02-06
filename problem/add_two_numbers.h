@@ -7,32 +7,30 @@ namespace problem {
 
 // The digits are stored in reverse order
 ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+  ListNode* prev = nullptr;
+  ListNode* head = nullptr;
+  ListNode* tmp = nullptr;
+  int addOne = 0;
+  int sum = 0;
 
-    ListNode* prev = nullptr;
-    ListNode* head = nullptr;
-    ListNode* tmp = nullptr;
-    int addOne = 0;
-    int sum = 0;
-
-    while (l1 || l2) {
-        sum = addOne + (l1 ? l1->val : 0) + (l2 ? l2->val : 0);
-        addOne = sum >= 10 ? 1 : 0;
-        sum %= 10;
-        tmp = new ListNode(sum);
-        if (!head) {
-            head = tmp;
-        } else {
-            prev->next = tmp;
-        }
-        prev = tmp;
-        if (l1) l1 = l1->next;
-        if (l2) l2 = l2->next;
-
+  while (l1 || l2) {
+    sum = addOne + (l1 ? l1->val : 0) + (l2 ? l2->val : 0);
+    addOne = sum >= 10 ? 1 : 0;
+    sum %= 10;
+    tmp = new ListNode(sum);
+    if (!head) {
+      head = tmp;
+    } else {
+      prev->next = tmp;
     }
-    if (addOne > 0) {
-        prev->next = new ListNode(addOne);
-    }
-    return head;
+    prev = tmp;
+    if (l1) l1 = l1->next;
+    if (l2) l2 = l2->next;
+  }
+  if (addOne > 0) {
+    prev->next = new ListNode(addOne);
+  }
+  return head;
 }
 
 }  // namespace problem

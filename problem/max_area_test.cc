@@ -10,24 +10,24 @@ class MaxAreaTest : public ::testing::Test {
   // be empty.
 
   MaxAreaTest() {
-     // You can do set-up work for each test here.
+    // You can do set-up work for each test here.
   }
 
   ~MaxAreaTest() override {
-     // You can do clean-up work that doesn't throw exceptions here.
+    // You can do clean-up work that doesn't throw exceptions here.
   }
 
   // If the constructor and destructor are not enough for setting up
   // and cleaning up each test, you can define the following methods:
 
   void SetUp() override {
-     // Code here will be called immediately after the constructor (right
-     // before each test).
+    // Code here will be called immediately after the constructor (right
+    // before each test).
   }
 
   void TearDown() override {
-     // Code here will be called immediately after each test (right
-     // before the destructor).
+    // Code here will be called immediately after each test (right
+    // before the destructor).
   }
 
   // Class members declared here can be used by all tests in the test suite
@@ -36,15 +36,15 @@ class MaxAreaTest : public ::testing::Test {
 
 // Tests that the Foo::Bar() method does Abc.
 TEST_F(MaxAreaTest, case1) {
-   // [1,8,6,2,5,4,8,3,7]
-  std::vector<int> height{1,8,6,2,5,4,8,3,7};
+  // [1,8,6,2,5,4,8,3,7]
+  std::vector<int> height{1, 8, 6, 2, 5, 4, 8, 3, 7};
   int output = MaxArea(height);
   EXPECT_EQ(output, 49);
 }
 
 TEST_F(MaxAreaTest, case2) {
-   // [1,1]
-  std::vector<int> height{1,1};
+  // [1,1]
+  std::vector<int> height{1, 1};
   int output = MaxArea(height);
   EXPECT_EQ(output, 1);
 }
