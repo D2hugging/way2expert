@@ -106,6 +106,8 @@ LeetCode solutions in C++ with unit tests.
 - [2734. Lexicographically Smallest String After Substring Operation](problem/lexicographically_small_string.h)
 - [3466. Sort Matrix by Diagonals](problem/sort_matrix_by_diagonals.h)
 - [3795. Minimum Subarray Length With Distinct Sum At Least K](problem/min_subarray_len_distinct_sum.h)
+- [3815. Design Auction System](problem/design_auction_system.h)
+- [3885. Design Event Manager](problem/design_event_manager.h)
 
 ## How to Test
 
